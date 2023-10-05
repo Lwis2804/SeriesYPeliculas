@@ -156,15 +156,6 @@
 			path = MostPopularResponse;
 			sourceTree = "<group>";
 		};
-		34AEFF012ACE6D3A00EDE29E /* MpSeries  */ = {
-			isa = PBXGroup;
-			children = (
-				34AEFF022ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.xib */,
-				34AEFF032ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.swift */,
-			);
-			path = "MpSeries ";
-			sourceTree = "<group>";
-		};
 		34AEFF042ACE6D3A00EDE29E /* MpMovies */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,11 +174,20 @@
 			path = PlayingNowCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		34AEFF102ACE6DAA00EDE29E /* MPSeries */ = {
+			isa = PBXGroup;
+			children = (
+				34AEFF022ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.xib */,
+				34AEFF032ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.swift */,
+			);
+			path = MPSeries;
+			sourceTree = "<group>";
+		};
 		AA6105A92ABCDB6F007E2EC3 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				34AEFF102ACE6DAA00EDE29E /* MPSeries */,
 				34AEFF042ACE6D3A00EDE29E /* MpMovies */,
-				34AEFF012ACE6D3A00EDE29E /* MpSeries  */,
 				34AEFF072ACE6D3A00EDE29E /* PlayingNowCollectionViewCell */,
 				AA6105AB2ABCDB96007E2EC3 /* SeriesCollectionViewCell */,
 				AA6105AA2ABCDB7C007E2EC3 /* MoviesCollectionViewCell */,
