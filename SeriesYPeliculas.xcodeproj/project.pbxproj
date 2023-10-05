@@ -27,7 +27,6 @@
 		AA6105AF2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6105AD2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.xib */; };
 		AA6105B22ABCDBDB007E2EC3 /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6105B02ABCDBDB007E2EC3 /* MoviesCollectionViewCell.swift */; };
 		AA6105B32ABCDBDB007E2EC3 /* MoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6105B12ABCDBDB007E2EC3 /* MoviesCollectionViewCell.xib */; };
-		AA6105B82ABCEA2C007E2EC3 /* ExtensionPlayingNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6105B72ABCEA2C007E2EC3 /* ExtensionPlayingNow.swift */; };
 		AA6105BB2ABCEDEF007E2EC3 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6105BA2ABCEDEF007E2EC3 /* ModelData.swift */; };
 		AA6105BE2ABCEE5F007E2EC3 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6105BD2ABCEE5F007E2EC3 /* Categories.swift */; };
 		AAA2674C2ABBF2FD00727A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2674B2ABBF2FD00727A9E /* AppDelegate.swift */; };
@@ -36,10 +35,6 @@
 		AAA267532ABBF2FE00727A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA267512ABBF2FE00727A9E /* Main.storyboard */; };
 		AAA267552ABBF30100727A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA267542ABBF30100727A9E /* Assets.xcassets */; };
 		AAA267582ABBF30100727A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA267562ABBF30100727A9E /* LaunchScreen.storyboard */; };
-		AAA267652ABBF57F00727A9E /* PlayingNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA267632ABBF57F00727A9E /* PlayingNowViewController.swift */; };
-		AAA267662ABBF57F00727A9E /* PlayingNowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA267642ABBF57F00727A9E /* PlayingNowViewController.xib */; };
-		AAA267692ABBF59A00727A9E /* MostPopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA267672ABBF59A00727A9E /* MostPopularViewController.swift */; };
-		AAA2676A2ABBF59A00727A9E /* MostPopularViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA267682ABBF59A00727A9E /* MostPopularViewController.xib */; };
 		AAA2676D2ABBF92100727A9E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2676C2ABBF92100727A9E /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +59,6 @@
 		AA6105AD2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		AA6105B02ABCDBDB007E2EC3 /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		AA6105B12ABCDBDB007E2EC3 /* MoviesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesCollectionViewCell.xib; sourceTree = "<group>"; };
-		AA6105B72ABCEA2C007E2EC3 /* ExtensionPlayingNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPlayingNow.swift; sourceTree = "<group>"; };
 		AA6105BA2ABCEDEF007E2EC3 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		AA6105BD2ABCEE5F007E2EC3 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		AAA267482ABBF2FD00727A9E /* SeriesYPeliculas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeriesYPeliculas.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,10 +69,6 @@
 		AAA267542ABBF30100727A9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAA267572ABBF30100727A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAA267592ABBF30100727A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAA267632ABBF57F00727A9E /* PlayingNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingNowViewController.swift; sourceTree = "<group>"; };
-		AAA267642ABBF57F00727A9E /* PlayingNowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayingNowViewController.xib; sourceTree = "<group>"; };
-		AAA267672ABBF59A00727A9E /* MostPopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularViewController.swift; sourceTree = "<group>"; };
-		AAA267682ABBF59A00727A9E /* MostPopularViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularViewController.xib; sourceTree = "<group>"; };
 		AAA2676C2ABBF92100727A9E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,29 +268,8 @@
 		AAA2675F2ABBF54800727A9E /* Vistas */ = {
 			isa = PBXGroup;
 			children = (
-				AAA267622ABBF56300727A9E /* PlayingNow */,
-				AAA267602ABBF55200727A9E /* MostPopular */,
 			);
 			path = Vistas;
-			sourceTree = "<group>";
-		};
-		AAA267602ABBF55200727A9E /* MostPopular */ = {
-			isa = PBXGroup;
-			children = (
-				AAA267672ABBF59A00727A9E /* MostPopularViewController.swift */,
-				AAA267682ABBF59A00727A9E /* MostPopularViewController.xib */,
-			);
-			path = MostPopular;
-			sourceTree = "<group>";
-		};
-		AAA267622ABBF56300727A9E /* PlayingNow */ = {
-			isa = PBXGroup;
-			children = (
-				AAA267632ABBF57F00727A9E /* PlayingNowViewController.swift */,
-				AA6105B72ABCEA2C007E2EC3 /* ExtensionPlayingNow.swift */,
-				AAA267642ABBF57F00727A9E /* PlayingNowViewController.xib */,
-			);
-			path = PlayingNow;
 			sourceTree = "<group>";
 		};
 		AAA2676B2ABBF8C700727A9E /* TapBarController */ = {
@@ -370,9 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA6105B32ABCDBDB007E2EC3 /* MoviesCollectionViewCell.xib in Resources */,
-				AAA267662ABBF57F00727A9E /* PlayingNowViewController.xib in Resources */,
 				AAA267582ABBF30100727A9E /* LaunchScreen.storyboard in Resources */,
-				AAA2676A2ABBF59A00727A9E /* MostPopularViewController.xib in Resources */,
 				AAA267552ABBF30100727A9E /* Assets.xcassets in Resources */,
 				AAA267532ABBF2FE00727A9E /* Main.storyboard in Resources */,
 				34AEFF0A2ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.xib in Resources */,
@@ -391,13 +358,11 @@
 			files = (
 				34AEFEFB2ACE6D0B00EDE29E /* DatesNPResponse.swift in Sources */,
 				34AEFF002ACE6D0B00EDE29E /* MostPopularResults.swift in Sources */,
-				AAA267692ABBF59A00727A9E /* MostPopularViewController.swift in Sources */,
 				34AEFEFE2ACE6D0B00EDE29E /* UpcomingResponse.swift in Sources */,
 				34AEFF0F2ACE6D3A00EDE29E /* PlayingNowCollectionViewCell.swift in Sources */,
 				34AEFEFC2ACE6D0B00EDE29E /* NowPlayingResponse.swift in Sources */,
 				34AEFEFF2ACE6D0B00EDE29E /* MostPopularResponse.swift in Sources */,
 				34AEFEFA2ACE6D0B00EDE29E /* ResultsNPResponse.swift in Sources */,
-				AAA267652ABBF57F00727A9E /* PlayingNowViewController.swift in Sources */,
 				34AEFF0B2ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.swift in Sources */,
 				34AEFEEA2ACE6D0200EDE29E /* Movie_WS.swift in Sources */,
 				AAA267502ABBF2FE00727A9E /* ViewController.swift in Sources */,
@@ -405,7 +370,6 @@
 				AAA2674C2ABBF2FD00727A9E /* AppDelegate.swift in Sources */,
 				AA6105BE2ABCEE5F007E2EC3 /* Categories.swift in Sources */,
 				34AEFEFD2ACE6D0B00EDE29E /* TopRatedResponse.swift in Sources */,
-				AA6105B82ABCEA2C007E2EC3 /* ExtensionPlayingNow.swift in Sources */,
 				AAA2676D2ABBF92100727A9E /* TabBarViewController.swift in Sources */,
 				34AEFEDF2ACE668400EDE29E /* Extensions.swift in Sources */,
 				AA6105BB2ABCEDEF007E2EC3 /* ModelData.swift in Sources */,
