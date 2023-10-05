@@ -22,10 +22,7 @@ class MostPopularViewController: UIViewController {
         didSet{self.seriesCollectionVMP.layer.cornerRadius = 10}
     }
     
-    
-    let modelData: ModelData = ModelData()
     var arrCategories: [Categories] = []
-    var arrCategoriesSeries: [CategoriesSeries] = []
     var arrMostPopular: [MostPopularResults] = []
     
     

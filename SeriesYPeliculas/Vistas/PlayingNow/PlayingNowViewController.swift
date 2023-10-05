@@ -26,12 +26,8 @@ class PlayingNowViewController: UIViewController {
         didSet{self.seriesCollectionView.layer.cornerRadius = 10}
     }
     
-    
-    let modelData: ModelData = ModelData()
     var arrCategories: [Categories] = []
-    var arrCategoriesSeries: [CategoriesSeries] = []
     var arrNowPlayingMovies: [ResultsNPResponse] = []
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

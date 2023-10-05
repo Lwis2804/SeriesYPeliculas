@@ -17,12 +17,8 @@
 		34AEFEFE2ACE6D0B00EDE29E /* UpcomingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFEF52ACE6D0B00EDE29E /* UpcomingResponse.swift */; };
 		34AEFEFF2ACE6D0B00EDE29E /* MostPopularResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFEF72ACE6D0B00EDE29E /* MostPopularResponse.swift */; };
 		34AEFF002ACE6D0B00EDE29E /* MostPopularResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFEF82ACE6D0B00EDE29E /* MostPopularResults.swift */; };
-		34AEFF0A2ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34AEFF022ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.xib */; };
-		34AEFF0B2ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFF032ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.swift */; };
 		34AEFF0C2ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFF052ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.swift */; };
 		34AEFF0D2ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34AEFF062ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.xib */; };
-		34AEFF0E2ACE6D3A00EDE29E /* MoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34AEFF082ACE6D3A00EDE29E /* MoviesCollectionViewCell.xib */; };
-		34AEFF0F2ACE6D3A00EDE29E /* PlayingNowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFF092ACE6D3A00EDE29E /* PlayingNowCollectionViewCell.swift */; };
 		34AEFF2A2ACE6E0800EDE29E /* ExtensionPlayingNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFF122ACE6E0700EDE29E /* ExtensionPlayingNow.swift */; };
 		34AEFF2B2ACE6E0800EDE29E /* PlayingNowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34AEFF132ACE6E0700EDE29E /* PlayingNowViewController.xib */; };
 		34AEFF2C2ACE6E0800EDE29E /* PlayingNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFF142ACE6E0700EDE29E /* PlayingNowViewController.swift */; };
@@ -41,10 +37,6 @@
 		34AEFF392ACE6E0800EDE29E /* TopRatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFF272ACE6E0800EDE29E /* TopRatedViewController.swift */; };
 		34AEFF3A2ACE6E0800EDE29E /* TopRatedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34AEFF282ACE6E0800EDE29E /* TopRatedViewController.xib */; };
 		34AEFF3B2ACE6E0800EDE29E /* ExtensionTopRated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFF292ACE6E0800EDE29E /* ExtensionTopRated.swift */; };
-		AA6105AE2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6105AC2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.swift */; };
-		AA6105AF2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6105AD2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.xib */; };
-		AA6105B22ABCDBDB007E2EC3 /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6105B02ABCDBDB007E2EC3 /* MoviesCollectionViewCell.swift */; };
-		AA6105B32ABCDBDB007E2EC3 /* MoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6105B12ABCDBDB007E2EC3 /* MoviesCollectionViewCell.xib */; };
 		AA6105BB2ABCEDEF007E2EC3 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6105BA2ABCEDEF007E2EC3 /* ModelData.swift */; };
 		AA6105BE2ABCEE5F007E2EC3 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6105BD2ABCEE5F007E2EC3 /* Categories.swift */; };
 		AAA2674C2ABBF2FD00727A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2674B2ABBF2FD00727A9E /* AppDelegate.swift */; };
@@ -67,12 +59,8 @@
 		34AEFEF52ACE6D0B00EDE29E /* UpcomingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingResponse.swift; sourceTree = "<group>"; };
 		34AEFEF72ACE6D0B00EDE29E /* MostPopularResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostPopularResponse.swift; sourceTree = "<group>"; };
 		34AEFEF82ACE6D0B00EDE29E /* MostPopularResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostPopularResults.swift; sourceTree = "<group>"; };
-		34AEFF022ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MpSeriesCollectionViewCell.xib; sourceTree = "<group>"; };
-		34AEFF032ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MpSeriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		34AEFF052ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MpMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		34AEFF062ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MpMoviesCollectionViewCell.xib; sourceTree = "<group>"; };
-		34AEFF082ACE6D3A00EDE29E /* MoviesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviesCollectionViewCell.xib; sourceTree = "<group>"; };
-		34AEFF092ACE6D3A00EDE29E /* PlayingNowCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingNowCollectionViewCell.swift; sourceTree = "<group>"; };
 		34AEFF122ACE6E0700EDE29E /* ExtensionPlayingNow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionPlayingNow.swift; sourceTree = "<group>"; };
 		34AEFF132ACE6E0700EDE29E /* PlayingNowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayingNowViewController.xib; sourceTree = "<group>"; };
 		34AEFF142ACE6E0700EDE29E /* PlayingNowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingNowViewController.swift; sourceTree = "<group>"; };
@@ -91,10 +79,6 @@
 		34AEFF272ACE6E0800EDE29E /* TopRatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopRatedViewController.swift; sourceTree = "<group>"; };
 		34AEFF282ACE6E0800EDE29E /* TopRatedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopRatedViewController.xib; sourceTree = "<group>"; };
 		34AEFF292ACE6E0800EDE29E /* ExtensionTopRated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionTopRated.swift; sourceTree = "<group>"; };
-		AA6105AC2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCollectionViewCell.swift; sourceTree = "<group>"; };
-		AA6105AD2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeriesCollectionViewCell.xib; sourceTree = "<group>"; };
-		AA6105B02ABCDBDB007E2EC3 /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
-		AA6105B12ABCDBDB007E2EC3 /* MoviesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesCollectionViewCell.xib; sourceTree = "<group>"; };
 		AA6105BA2ABCEDEF007E2EC3 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		AA6105BD2ABCEE5F007E2EC3 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		AAA267482ABBF2FD00727A9E /* SeriesYPeliculas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeriesYPeliculas.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,24 +175,6 @@
 			path = MpMovies;
 			sourceTree = "<group>";
 		};
-		34AEFF072ACE6D3A00EDE29E /* PlayingNowCollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				34AEFF082ACE6D3A00EDE29E /* MoviesCollectionViewCell.xib */,
-				34AEFF092ACE6D3A00EDE29E /* PlayingNowCollectionViewCell.swift */,
-			);
-			path = PlayingNowCollectionViewCell;
-			sourceTree = "<group>";
-		};
-		34AEFF102ACE6DAA00EDE29E /* MPSeries */ = {
-			isa = PBXGroup;
-			children = (
-				34AEFF022ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.xib */,
-				34AEFF032ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.swift */,
-			);
-			path = MPSeries;
-			sourceTree = "<group>";
-		};
 		34AEFF112ACE6E0700EDE29E /* PlayingNow */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,31 +246,9 @@
 		AA6105A92ABCDB6F007E2EC3 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				34AEFF102ACE6DAA00EDE29E /* MPSeries */,
 				34AEFF042ACE6D3A00EDE29E /* MpMovies */,
-				34AEFF072ACE6D3A00EDE29E /* PlayingNowCollectionViewCell */,
-				AA6105AB2ABCDB96007E2EC3 /* SeriesCollectionViewCell */,
-				AA6105AA2ABCDB7C007E2EC3 /* MoviesCollectionViewCell */,
 			);
 			path = CollectionViewCells;
-			sourceTree = "<group>";
-		};
-		AA6105AA2ABCDB7C007E2EC3 /* MoviesCollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				AA6105B02ABCDBDB007E2EC3 /* MoviesCollectionViewCell.swift */,
-				AA6105B12ABCDBDB007E2EC3 /* MoviesCollectionViewCell.xib */,
-			);
-			path = MoviesCollectionViewCell;
-			sourceTree = "<group>";
-		};
-		AA6105AB2ABCDB96007E2EC3 /* SeriesCollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				AA6105AC2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.swift */,
-				AA6105AD2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.xib */,
-			);
-			path = SeriesCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		AA6105B42ABCE91A007E2EC3 /* Extensions */ = {
@@ -449,7 +393,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				34AEFF2F2ACE6E0800EDE29E /* MovieDetailViewController.xib in Resources */,
-				AA6105B32ABCDBDB007E2EC3 /* MoviesCollectionViewCell.xib in Resources */,
 				AAA267582ABBF30100727A9E /* LaunchScreen.storyboard in Resources */,
 				34AEFF372ACE6E0800EDE29E /* MostPopularViewController.xib in Resources */,
 				34AEFF312ACE6E0800EDE29E /* UpcomingViewController.xib in Resources */,
@@ -457,10 +400,7 @@
 				34AEFF2B2ACE6E0800EDE29E /* PlayingNowViewController.xib in Resources */,
 				AAA267552ABBF30100727A9E /* Assets.xcassets in Resources */,
 				AAA267532ABBF2FE00727A9E /* Main.storyboard in Resources */,
-				34AEFF0A2ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.xib in Resources */,
 				34AEFF3A2ACE6E0800EDE29E /* TopRatedViewController.xib in Resources */,
-				34AEFF0E2ACE6D3A00EDE29E /* MoviesCollectionViewCell.xib in Resources */,
-				AA6105AF2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.xib in Resources */,
 				34AEFF0D2ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.xib in Resources */,
 				34AEFF352ACE6E0800EDE29E /* SearchViewController.xib in Resources */,
 			);
@@ -477,17 +417,14 @@
 				34AEFEFB2ACE6D0B00EDE29E /* DatesNPResponse.swift in Sources */,
 				34AEFF002ACE6D0B00EDE29E /* MostPopularResults.swift in Sources */,
 				34AEFEFE2ACE6D0B00EDE29E /* UpcomingResponse.swift in Sources */,
-				34AEFF0F2ACE6D3A00EDE29E /* PlayingNowCollectionViewCell.swift in Sources */,
 				34AEFF382ACE6E0800EDE29E /* MostPopularViewController.swift in Sources */,
 				34AEFEFC2ACE6D0B00EDE29E /* NowPlayingResponse.swift in Sources */,
 				34AEFF392ACE6E0800EDE29E /* TopRatedViewController.swift in Sources */,
 				34AEFEFF2ACE6D0B00EDE29E /* MostPopularResponse.swift in Sources */,
 				34AEFEFA2ACE6D0B00EDE29E /* ResultsNPResponse.swift in Sources */,
 				34AEFF362ACE6E0800EDE29E /* ExtensionMostPopular.swift in Sources */,
-				34AEFF0B2ACE6D3A00EDE29E /* MpSeriesCollectionViewCell.swift in Sources */,
 				34AEFEEA2ACE6D0200EDE29E /* Movie_WS.swift in Sources */,
 				AAA267502ABBF2FE00727A9E /* ViewController.swift in Sources */,
-				AA6105B22ABCDBDB007E2EC3 /* MoviesCollectionViewCell.swift in Sources */,
 				AAA2674C2ABBF2FD00727A9E /* AppDelegate.swift in Sources */,
 				AA6105BE2ABCEE5F007E2EC3 /* Categories.swift in Sources */,
 				34AEFF322ACE6E0800EDE29E /* SeriesDetailViewController.swift in Sources */,
@@ -503,7 +440,6 @@
 				AA6105BB2ABCEDEF007E2EC3 /* ModelData.swift in Sources */,
 				34AEFEF92ACE6D0B00EDE29E /* SearchResponse.swift in Sources */,
 				AAA2674E2ABBF2FE00727A9E /* SceneDelegate.swift in Sources */,
-				AA6105AE2ABCDBC3007E2EC3 /* SeriesCollectionViewCell.swift in Sources */,
 				34AEFF0C2ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,8 +592,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -671,7 +607,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -687,8 +623,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -702,7 +638,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
