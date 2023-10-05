@@ -1,4 +1,6 @@
-
+//  Extensions.swift
+//  SeriesYPeliculas
+//  Created by Moises Abraham Vazquez Perez on 04/10/23.
 
 import UIKit
 
