@@ -5,9 +5,9 @@
 import Foundation
 
 struct NowPlayingResponse : Codable {
-    let dates : DatesNPResponse?
-    let page : Int?
-    let results : [ResultsNPResponse]?
-    let total_pages : Int?
-    let total_results : Int?
+    var dates : DatesNPResponse?
+    var page : Int?
+    var results : [ResultsNPResponse]?
+    var total_pages : Int?
+    var total_results : Int?
 }

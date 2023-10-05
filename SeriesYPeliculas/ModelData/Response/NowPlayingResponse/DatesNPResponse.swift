@@ -8,6 +8,6 @@
 import Foundation
 
 struct DatesNPResponse : Codable {
-    let maximum : String?
-    let minimum : String?
+    var maximum : String?
+    var minimum : String?
 }
