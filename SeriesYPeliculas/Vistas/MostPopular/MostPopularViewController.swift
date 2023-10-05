@@ -17,12 +17,8 @@ class MostPopularViewController: UIViewController {
     @IBOutlet weak var moviesCollectionVMP: UICollectionView!{
         didSet{self.moviesCollectionVMP.layer.cornerRadius = 10}
     }
-    @IBOutlet weak var lblSeriesMP: UILabel!
-    @IBOutlet weak var seriesCollectionVMP: UICollectionView!{
-        didSet{self.seriesCollectionVMP.layer.cornerRadius = 10}
-    }
     
-    var arrCategories: [Categories] = []
+
     var arrMostPopular: [MostPopularResults] = []
     
     
@@ -51,7 +47,6 @@ class MostPopularViewController: UIViewController {
     func setUpMoviesCvMp() {
         self.moviesCollectionVMP.dataSource = self
         self.moviesCollectionVMP.delegate = self
-        self.moviesCollectionVMP.tag = 12
         self.moviesCollectionVMP.register(MpMoviesCollectionViewCell.nib, forCellWithReuseIdentifier: MpMoviesCollectionViewCell.identifier)
     }
     

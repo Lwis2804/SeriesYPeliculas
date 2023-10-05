@@ -10,32 +10,29 @@ import UIKit
 class MpMoviesCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var backgroundImage: UIView!
-    @IBOutlet weak var movieImageMp: UIImageView!{
-        didSet{self.movieImageMp.layer.cornerRadius = 10}
-    }
-    @IBOutlet weak var lblTitleMovieMp: UILabel!{
-        didSet{self.lblTitleMovieMp.layer.cornerRadius = 10}
-    }
-    @IBOutlet weak var lblLongMovieMp: UILabel!{
-        didSet{self.lblLongMovieMp.layer.cornerRadius = 10}
-    }
-    @IBOutlet weak var starImageMp: UIImageView!
-    @IBOutlet weak var lblRateMovieMP: UILabel!{
-        didSet{self.lblRateMovieMP.layer.cornerRadius = 10}
-    }
-    
+    @IBOutlet weak var mpBackPopular: UILabel!
+    @IBOutlet weak var mpOriginalLanguage: UILabel!
+    @IBOutlet weak var mpID: UILabel!
+    @IBOutlet weak var mpOverView: UILabel!
+    @IBOutlet weak var mpPosterPath: UILabel!
+    @IBOutlet weak var mpReleaseDate: UILabel!
+    @IBOutlet weak var mpVoteAverage: UILabel!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    public func setUpMoviesCollectionViewMp (categoria: Categories){
-        self.lblTitleMovieMp.text = categoria.title ?? ""
-        self.lblRateMovieMP.text = categoria.stars ?? ""
-        self.lblLongMovieMp.text = categoria.time ?? ""
-        self.movieImageMp.image = UIImage(named: categoria.images[0] )
+    public func setUpMoviesCollectionViewMp (categoria: MostPopularResults){
+        self.mpBackPopular.text = categoria.backdrop_path
+        self.mpOriginalLanguage.text = categoria.original_language
+        self.mpID.text = "\(categoria.id ?? 0)"
+        self.mpOverView.text = categoria.overview
+        self.mpPosterPath.text = categoria.poster_path
+        self.mpReleaseDate.text = categoria.release_date
+        self.mpVoteAverage.text = "\(categoria.vote_average ?? 0)"
     }
+    
     
 
 
