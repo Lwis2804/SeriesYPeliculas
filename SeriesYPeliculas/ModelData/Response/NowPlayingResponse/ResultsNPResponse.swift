@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct ResultsNPResponse : Codable {
+struct NowPlayingResult : Codable {
     var adult : Bool?
     var backdrop_path : String?
     var genre_ids : [Int]?

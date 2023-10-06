@@ -140,9 +140,9 @@
 		34AEFEEE2ACE6D0B00EDE29E /* NowPlayingResponse */ = {
 			isa = PBXGroup;
 			children = (
+				34AEFEF12ACE6D0B00EDE29E /* NowPlayingResponse.swift */,
 				34AEFEEF2ACE6D0B00EDE29E /* ResultsNPResponse.swift */,
 				34AEFEF02ACE6D0B00EDE29E /* DatesNPResponse.swift */,
-				34AEFEF12ACE6D0B00EDE29E /* NowPlayingResponse.swift */,
 			);
 			path = NowPlayingResponse;
 			sourceTree = "<group>";

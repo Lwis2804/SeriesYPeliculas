@@ -139,18 +139,13 @@
             </constraints>
             <connections>
                 <outlet property="backgroundImage" destination="mgE-MI-vOc" id="cn1-r4-Nyo"/>
-                <outlet property="lblLongMovieMp" destination="kgi-f6-rjZ" id="xoK-2j-hs9"/>
-                <outlet property="lblRateMovieMP" destination="fJu-BX-IND" id="hA6-d5-cGM"/>
-                <outlet property="lblTitleMovieMp" destination="c1v-5s-fKc" id="Sn5-Ef-LR6"/>
                 <outlet property="mpBackPopular" destination="c1v-5s-fKc" id="L74-4w-2Ho"/>
                 <outlet property="mpID" destination="fJu-BX-IND" id="c5O-3r-uUy"/>
-                <outlet property="mpOriginal" destination="kgi-f6-rjZ" id="wGG-9Q-cQ0"/>
                 <outlet property="mpOriginalLanguage" destination="kgi-f6-rjZ" id="BX8-FG-50X"/>
                 <outlet property="mpOverView" destination="60m-Gr-lMn" id="aWb-Dr-v0r"/>
                 <outlet property="mpPosterPath" destination="nyi-Mh-zcA" id="jZW-k3-Pki"/>
                 <outlet property="mpReleaseDate" destination="1zb-OV-NuF" id="E6d-Ob-AxQ"/>
                 <outlet property="mpVoteAverage" destination="DTS-8b-WV9" id="oVm-JG-kKB"/>
-                <outlet property="starImageMp" destination="kjc-6Q-KrQ" id="kwz-uX-725"/>
             </connections>
             <point key="canvasLocation" x="-197" y="8"/>
         </collectionViewCell>
