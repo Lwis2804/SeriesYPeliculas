@@ -7,9 +7,9 @@ extension PlayingNowViewController : UICollectionViewDelegate & UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cCell = collectionView.dequeueReusableCell(withReuseIdentifier: PlayingNowCollectionViewCell.identifier, for: indexPath) as? PlayingNowCollectionViewCell ?? PlayingNowCollectionViewCell()
-            cCell.setUpNowPlayingMovies(categoria: arrNowPlayingMovies[indexPath.row])
-            return cCell
+        let cCell = collectionView.dequeueReusableCell(withReuseIdentifier: PlayingNowCollectionViewCell.identifier, for: indexPath) as? PlayingNowCollectionViewCell ?? PlayingNowCollectionViewCell()
+        cCell.setUpNowPlayingMovies(categoria: arrNowPlayingMovies[indexPath.row])
+        return cCell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

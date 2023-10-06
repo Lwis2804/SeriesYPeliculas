@@ -19,6 +19,8 @@ class UpcomingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpTopRatedMovies()
+        self.UpcomingMovies()
 
     }
     

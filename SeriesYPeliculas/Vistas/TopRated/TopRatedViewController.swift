@@ -21,7 +21,6 @@ class TopRatedViewController: UIViewController {
         super.viewDidLoad()
         setUpTopRatedMovies()
         self.TopRatedMovies()
-
     }
     
     
