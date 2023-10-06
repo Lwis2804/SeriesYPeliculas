@@ -52,10 +52,8 @@ class PlayingNowViewController: UIViewController {
         self.moviesCollectionView.dataSource = self
         self.moviesCollectionView.delegate = self
         self.moviesCollectionView.tag = 12
-        self.moviesCollectionView.register(MoviesCollectionViewCell.nib, forCellWithReuseIdentifier: MoviesCollectionViewCell.identifier)
+        self.moviesCollectionView.register(PlayingNowCollectionViewCell.nib, forCellWithReuseIdentifier: PlayingNowCollectionViewCell.identifier)
     }
     
-  
-
 
 }
