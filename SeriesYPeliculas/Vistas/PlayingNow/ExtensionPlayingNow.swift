@@ -2,15 +2,19 @@
 import UIKit
 
 extension PlayingNowViewController : UICollectionViewDelegate & UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrNowPlayingMovies.count
-    }
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cCell = collectionView.dequeueReusableCell(withReuseIdentifier: PlayingNowCollectionViewCell.identifier, for: indexPath) as? PlayingNowCollectionViewCell ?? PlayingNowCollectionViewCell()
         cCell.setUpNowPlayingMovies(categoria: arrNowPlayingMovies[indexPath.row])
         return cCell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrNowPlayingMovies.count
+    }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         

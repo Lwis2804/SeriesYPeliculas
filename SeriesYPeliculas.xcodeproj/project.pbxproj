@@ -53,6 +53,9 @@
 		AAA267552ABBF30100727A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA267542ABBF30100727A9E /* Assets.xcassets */; };
 		AAA267582ABBF30100727A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA267562ABBF30100727A9E /* LaunchScreen.storyboard */; };
 		AAA2676D2ABBF92100727A9E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2676C2ABBF92100727A9E /* TabBarViewController.swift */; };
+		AAFE87612AD48CEA0032A7CA /* ExtensionSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE87602AD48CEA0032A7CA /* ExtensionSearch.swift */; };
+		AAFE87652AD48E2E0032A7CA /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE87632AD48E2E0032A7CA /* SearchCollectionViewCell.swift */; };
+		AAFE87662AD48E2E0032A7CA /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFE87642AD48E2E0032A7CA /* SearchCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +107,9 @@
 		AAA267572ABBF30100727A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAA267592ABBF30100727A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA2676C2ABBF92100727A9E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		AAFE87602AD48CEA0032A7CA /* ExtensionSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearch.swift; sourceTree = "<group>"; };
+		AAFE87632AD48E2E0032A7CA /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		AAFE87642AD48E2E0032A7CA /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				34AEFF202ACE6E0700EDE29E /* SearchViewController.swift */,
+				AAFE87602AD48CEA0032A7CA /* ExtensionSearch.swift */,
 				34AEFF212ACE6E0700EDE29E /* SearchViewController.xib */,
 			);
 			path = Search;
@@ -289,6 +296,7 @@
 		AA6105A92ABCDB6F007E2EC3 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				AAFE87622AD48E170032A7CA /* SearchViewCell */,
 				AA48B1152ACF8A8800CC6D5C /* UpcomingCollectionViewCell */,
 				AA48B1102ACF871000CC6D5C /* TopRatedCollectionViewCell */,
 				AA2C1D442ACF7F7200C4597F /* PlayingNowCollectionViewCell */,
@@ -371,6 +379,15 @@
 			path = TapBarController;
 			sourceTree = "<group>";
 		};
+		AAFE87622AD48E170032A7CA /* SearchViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE87632AD48E2E0032A7CA /* SearchCollectionViewCell.swift */,
+				AAFE87642AD48E2E0032A7CA /* SearchCollectionViewCell.xib */,
+			);
+			path = SearchViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -443,6 +460,7 @@
 				34AEFF3A2ACE6E0800EDE29E /* TopRatedViewController.xib in Resources */,
 				34AEFF0D2ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.xib in Resources */,
 				34AEFF352ACE6E0800EDE29E /* SearchViewController.xib in Resources */,
+				AAFE87662AD48E2E0032A7CA /* SearchCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +473,7 @@
 			files = (
 				34AEFF2D2ACE6E0800EDE29E /* UpcomingViewController.swift in Sources */,
 				34AEFEFB2ACE6D0B00EDE29E /* DatesNPResponse.swift in Sources */,
+				AAFE87652AD48E2E0032A7CA /* SearchCollectionViewCell.swift in Sources */,
 				34AEFF002ACE6D0B00EDE29E /* MostPopularResults.swift in Sources */,
 				34AEFEFE2ACE6D0B00EDE29E /* UpcomingResponse.swift in Sources */,
 				34AEFF382ACE6E0800EDE29E /* MostPopularViewController.swift in Sources */,
@@ -483,6 +502,7 @@
 				34AEFF342ACE6E0800EDE29E /* SearchViewController.swift in Sources */,
 				34AEFEF92ACE6D0B00EDE29E /* SearchResponse.swift in Sources */,
 				AA48B1132ACF877E00CC6D5C /* TopRatedCollectionViewCell.swift in Sources */,
+				AAFE87612AD48CEA0032A7CA /* ExtensionSearch.swift in Sources */,
 				AAA2674E2ABBF2FE00727A9E /* SceneDelegate.swift in Sources */,
 				34AEFF0C2ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.swift in Sources */,
 			);
