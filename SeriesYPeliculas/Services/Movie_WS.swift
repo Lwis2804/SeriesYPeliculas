@@ -81,9 +81,9 @@ final class Movie_WS {
     }
     
     
-    func getSearchResponse(withHandler: @escaping blkSearchResponse) {
+    func getSearchResponse(withSearch: String, withHandler : @escaping blkSearchResponse) {
         
-        let urlSearchResponse = URL(string: "https://api.themoviedb.org/3/search/movie?api_key=f6cd5c1a9e6c6b965fdcab0fa6ddd38a&query=") ?? URL(fileURLWithPath: "")
+        let urlSearchResponse = URL(string: "https://api.themoviedb.org/3/search/movie?api_key=f6cd5c1a9e6c6b965fdcab0fa6ddd38a&query=\(withSearch)") ?? URL(fileURLWithPath: "")
         
         URLSession.shared.dataTask(with: urlSearchResponse) { data, response, error in
             guard let datos = data else { return }

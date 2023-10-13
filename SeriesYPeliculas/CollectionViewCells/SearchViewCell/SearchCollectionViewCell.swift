@@ -18,6 +18,9 @@ class SearchCollectionViewCell: UICollectionViewCell {
     
     
     
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,11 +28,14 @@ class SearchCollectionViewCell: UICollectionViewCell {
     
     
     
-    public func setUpSearchMovies (categoria : SearchResponse) {
-        self.sePage.text = "\(categoria.page ?? 0)"
-        self.seResult.text = "\(String(describing: categoria.results))"
-        self.seTotalPages.text = "\(categoria.total_pages ?? 0)"
-        self.seTotalResult.text = "\(String(describing: categoria.total_results))"
+    public func setUpSearchMovies (categoria : ResultSearchResponse) {
+        self.sePage.text = "\(categoria.id ?? 0)"
+        self.seResult.text = "\(String(describing: categoria.title))"
+        self.seTotalPages.text = "\(categoria.vote_average ?? 0)"
+        self.seTotalResult.text = "\(String(describing: categoria.popularity))"
     }
 
 }
+
+
+

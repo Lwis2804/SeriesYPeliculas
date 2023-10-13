@@ -12,23 +12,25 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var backgroundImage: UIView!
     @IBOutlet weak var searchCollectionView: UICollectionView!
     @IBOutlet weak var searchTitle: UILabel!
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var btnSearch: UIButton!
     
-    
-    
-    var arrSearch: [SearchResponse] = []
-    
+    var arrSearch: [ResultSearchResponse] = []
+    var recibeSearch : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpMoviesCvMp()
+
     }
 
 
     
-    private func getSearchMocies() {
+    private func getSearchMocies(withSearch search : String) {
         let movieWS = Movie_WS()
-        movieWS.getSearchResponse { respuesta, error in
+        movieWS.getSearchResponse(withSearch: search) { respuesta, error in
             if error == nil {
-              //  self.arrSearch = respuesta?.results ?? []
+                self.arrSearch = respuesta?.results ?? []
                 DispatchQueue.main.async {
                     self.searchCollectionView.reloadData()
                 }
@@ -48,4 +50,15 @@ class SearchViewController: UIViewController {
     }
 
 
+    @IBAction func goToSearch(_ sender: Any) {
+        self.recibeSearch = searchTextField.text ?? ""
+        arrSearch.removeAll()
+        if recibeSearch != "" {
+            getSearchMocies(withSearch: recibeSearch)
+        } else {
+            self.showAlert(WithTitle: "Cuidado", andMessage: "Favor de llenar la busqueda")
+        }
+    }
 }
+
+
