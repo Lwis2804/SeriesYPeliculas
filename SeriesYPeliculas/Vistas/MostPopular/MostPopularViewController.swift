@@ -35,10 +35,13 @@ class MostPopularViewController: UIViewController {
         movieWS.getMostpopular { respuesta, error in
             if error == nil {
                 self.arrMostPopular = respuesta?.results ?? []
-                self.moviesCollectionVMP.reloadData()
+                DispatchQueue.main.async {
+                    self.moviesCollectionVMP.reloadData()
+                }
             }else {
-                //TODO: CREAR UN ERROR
-                print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ERROR ---> \(String(describing: error?.localizedDescription)) \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+                DispatchQueue.main.async {
+                    self.showAlert(WithTitle: "Error", andMessage: "Ocurrio un error en el llamdo a Servicio")
+                }
             }
         }
     }

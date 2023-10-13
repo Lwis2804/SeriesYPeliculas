@@ -28,11 +28,14 @@ class SearchViewController: UIViewController {
         let movieWS = Movie_WS()
         movieWS.getSearchResponse { respuesta, error in
             if error == nil {
-                self.arrSearch = respuesta?.self ?? []
-                self.searchCollectionView.reloadData()
+              //  self.arrSearch = respuesta?.results ?? []
+                DispatchQueue.main.async {
+                    self.searchCollectionView.reloadData()
+                }
             }else {
-                //TODO: CREAR UN ERROR
-                print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ERROR ---> \(String(describing: error?.localizedDescription)) \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+                DispatchQueue.main.async {
+                    self.showAlert(WithTitle: "Error", andMessage: "Ocurrio un error en el llamdo a Servicio")
+                }
             }
         }
     }
@@ -41,7 +44,7 @@ class SearchViewController: UIViewController {
     func setUpMoviesCvMp() {
         self.searchCollectionView.dataSource = self
         self.searchCollectionView.delegate = self
-        self.searchCollectionView.register(MpMoviesCollectionViewCell.nib, forCellWithReuseIdentifier: MpMoviesCollectionViewCell.identifier)
+        self.searchCollectionView.register(SearchCollectionViewCell.nib, forCellWithReuseIdentifier: SearchCollectionViewCell.identifier)
     }
 
 

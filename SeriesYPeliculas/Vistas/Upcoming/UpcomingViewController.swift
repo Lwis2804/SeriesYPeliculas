@@ -30,10 +30,13 @@ class UpcomingViewController: UIViewController {
         movieWS.getUpcomingResponse { respuesta, error in
             if error == nil {
                 self.arrUpcomingmovies = respuesta?.results ?? []
-                self.upcomingCollectionView.reloadData()
+                DispatchQueue.main.async {
+                    self.upcomingCollectionView.reloadData()
+                }
             }else {
-                //TODO: CREAR UN ERROR
-                print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ERROR ---> \(String(describing: error?.localizedDescription)) \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+                DispatchQueue.main.async {
+                    self.showAlert(WithTitle: "Error", andMessage: "Ocurrio un error en el llamdo a Servicio")
+                }
             }
         }
     }

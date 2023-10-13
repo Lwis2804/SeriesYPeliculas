@@ -29,10 +29,13 @@ class TopRatedViewController: UIViewController {
         movieWS.getTopRated { respuesta, error in
             if error == nil {
                 self.arrTopRatedMovies = respuesta?.results ?? []
-                self.topRatedCollectionView.reloadData()
+                DispatchQueue.main.async {
+                    self.topRatedCollectionView.reloadData()
+                }
             }else {
-                //TODO: CREAR UN ERROR
-                print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ERROR ---> \(String(describing: error?.localizedDescription)) \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+                DispatchQueue.main.async {
+                    self.showAlert(WithTitle: "Error", andMessage: "Ocurrio un error en el llamdo a Servicio")
+                }
             }
         }
     }

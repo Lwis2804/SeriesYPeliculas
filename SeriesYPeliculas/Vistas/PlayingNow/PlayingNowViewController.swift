@@ -26,12 +26,14 @@ class PlayingNowViewController: UIViewController {
         didSet{self.seriesCollectionView.layer.cornerRadius = 10}
     }
     
+    
     var arrNowPlayingMovies: [NowPlayingResult] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpMoviesCv()
+        self.setUpMoviesCv()
         self.getNowPlayingMovies()
+        self.moviesCollectionView.reloadData()
     }
     
     private func getNowPlayingMovies() {
@@ -39,10 +41,13 @@ class PlayingNowViewController: UIViewController {
         movieWS.getNowPlayingMovies { respuesta, error in
             if error == nil {
                 self.arrNowPlayingMovies = respuesta?.results ?? []
-                self.moviesCollectionView.reloadData()
+                DispatchQueue.main.async {
+                    self.moviesCollectionView.reloadData()
+                }
             }else {
-                //TODO: CREAR UN ERROR
-                print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ERROR ---> \(String(describing: error?.localizedDescription)) \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+                DispatchQueue.main.async {
+                    self.showAlert(WithTitle: "Error", andMessage: "Ocurrio un error en el llamdo a Servicio")
+                }
             }
         }
     }
@@ -54,6 +59,7 @@ class PlayingNowViewController: UIViewController {
         self.moviesCollectionView.tag = 12
         self.moviesCollectionView.register(PlayingNowCollectionViewCell.nib, forCellWithReuseIdentifier: PlayingNowCollectionViewCell.identifier)
     }
+
     
 
 }

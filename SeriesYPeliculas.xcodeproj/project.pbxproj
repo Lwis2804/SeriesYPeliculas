@@ -346,7 +346,6 @@
 				AA6105A92ABCDB6F007E2EC3 /* CollectionViewCells */,
 				AAA2676B2ABBF8C700727A9E /* TapBarController */,
 				AAA2675F2ABBF54800727A9E /* Vistas */,
-				34AEFF1F2ACE6E0700EDE29E /* Search */,
 				AAA2674B2ABBF2FD00727A9E /* AppDelegate.swift */,
 				AAA2674D2ABBF2FE00727A9E /* SceneDelegate.swift */,
 				AAA2674F2ABBF2FE00727A9E /* ViewController.swift */,
@@ -361,12 +360,13 @@
 		AAA2675F2ABBF54800727A9E /* Vistas */ = {
 			isa = PBXGroup;
 			children = (
-				34AEFF1C2ACE6E0700EDE29E /* SeriesDetailView */,
 				34AEFF172ACE6E0700EDE29E /* MovieDeatailView */,
-				34AEFF222ACE6E0800EDE29E /* MostPopular */,
+				34AEFF1C2ACE6E0700EDE29E /* SeriesDetailView */,
 				34AEFF112ACE6E0700EDE29E /* PlayingNow */,
+				34AEFF222ACE6E0800EDE29E /* MostPopular */,
 				34AEFF262ACE6E0800EDE29E /* TopRated */,
 				34AEFF152ACE6E0700EDE29E /* Upcoming */,
+				34AEFF1F2ACE6E0700EDE29E /* Search */,
 			);
 			path = Vistas;
 			sourceTree = "<group>";
