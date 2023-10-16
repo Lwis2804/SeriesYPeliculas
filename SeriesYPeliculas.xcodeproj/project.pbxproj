@@ -46,6 +46,8 @@
 		AA7D083A2ADDE1130096D191 /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D08382ADDE1120096D191 /* Dates.swift */; };
 		AA7D083B2ADDE1130096D191 /* UpcomingResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D08392ADDE1130096D191 /* UpcomingResults.swift */; };
 		AA7D083D2ADDE16B0096D191 /* UpcomingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D083C2ADDE16B0096D191 /* UpcomingResponse.swift */; };
+		AA7D08422ADDE30C0096D191 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D08402ADDE30C0096D191 /* SearchTableViewCell.swift */; };
+		AA7D08432ADDE30C0096D191 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7D08412ADDE30C0096D191 /* SearchTableViewCell.xib */; };
 		AAA2674C2ABBF2FD00727A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2674B2ABBF2FD00727A9E /* AppDelegate.swift */; };
 		AAA2674E2ABBF2FE00727A9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2674D2ABBF2FE00727A9E /* SceneDelegate.swift */; };
 		AAA267502ABBF2FE00727A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2674F2ABBF2FE00727A9E /* ViewController.swift */; };
@@ -99,6 +101,8 @@
 		AA7D08382ADDE1120096D191 /* Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
 		AA7D08392ADDE1130096D191 /* UpcomingResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingResults.swift; sourceTree = "<group>"; };
 		AA7D083C2ADDE16B0096D191 /* UpcomingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingResponse.swift; sourceTree = "<group>"; };
+		AA7D08402ADDE30C0096D191 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		AA7D08412ADDE30C0096D191 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		AAA267482ABBF2FD00727A9E /* SeriesYPeliculas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeriesYPeliculas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA2674B2ABBF2FD00727A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAA2674D2ABBF2FE00727A9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -324,6 +328,23 @@
 			path = ModelData;
 			sourceTree = "<group>";
 		};
+		AA7D083E2ADDE25C0096D191 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AA7D083F2ADDE2790096D191 /* SearchTableViewCell */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		AA7D083F2ADDE2790096D191 /* SearchTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA7D08402ADDE30C0096D191 /* SearchTableViewCell.swift */,
+				AA7D08412ADDE30C0096D191 /* SearchTableViewCell.xib */,
+			);
+			path = SearchTableViewCell;
+			sourceTree = "<group>";
+		};
 		AAA2673F2ABBF2FD00727A9E = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +368,7 @@
 				AA6105B92ABCEDDC007E2EC3 /* ModelData */,
 				AA6105B42ABCE91A007E2EC3 /* Extensions */,
 				AA6105A92ABCDB6F007E2EC3 /* CollectionViewCells */,
+				AA7D083E2ADDE25C0096D191 /* TableViewCells */,
 				AAA2676B2ABBF8C700727A9E /* TapBarController */,
 				AAA2675F2ABBF54800727A9E /* Vistas */,
 				AAA2674B2ABBF2FD00727A9E /* AppDelegate.swift */,
@@ -450,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34AEFF2F2ACE6E0800EDE29E /* MovieDetailViewController.xib in Resources */,
+				AA7D08432ADDE30C0096D191 /* SearchTableViewCell.xib in Resources */,
 				AAA267582ABBF30100727A9E /* LaunchScreen.storyboard in Resources */,
 				34AEFF372ACE6E0800EDE29E /* MostPopularViewController.xib in Resources */,
 				AA48B1142ACF877E00CC6D5C /* TopRatedCollectionViewCell.xib in Resources */,
@@ -483,6 +506,7 @@
 				34AEFF392ACE6E0800EDE29E /* TopRatedViewController.swift in Sources */,
 				AA7D083D2ADDE16B0096D191 /* UpcomingResponse.swift in Sources */,
 				AA48B1182ACF8AA200CC6D5C /* UpcomingCollectionViewCell.swift in Sources */,
+				AA7D08422ADDE30C0096D191 /* SearchTableViewCell.swift in Sources */,
 				34AEFEFA2ACE6D0B00EDE29E /* ResultsNPResponse.swift in Sources */,
 				34AEFF362ACE6E0800EDE29E /* ExtensionMostPopular.swift in Sources */,
 				34AEFEEA2ACE6D0200EDE29E /* Movie_WS.swift in Sources */,

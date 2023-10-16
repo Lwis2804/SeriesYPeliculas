@@ -10,18 +10,17 @@ import UIKit
 class SearchViewController: UIViewController {
     
     @IBOutlet weak var backgroundImage: UIView!
-    @IBOutlet weak var searchCollectionView: UICollectionView!
-    @IBOutlet weak var searchTitle: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var btnSearch: UIButton!
+    @IBOutlet weak var searchTableView: UITableView!
+    
     
     var arrSearch: [ResultSearchResponse] = []
     var recibeSearch : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpMoviesCvMp()
-
+        setUpTableView()
     }
 
 
@@ -32,7 +31,7 @@ class SearchViewController: UIViewController {
             if error == nil {
                 self.arrSearch = respuesta?.results ?? []
                 DispatchQueue.main.async {
-                    self.searchCollectionView.reloadData()
+                    self.searchTableView.reloadData()
                 }
             }else {
                 DispatchQueue.main.async {
@@ -43,12 +42,12 @@ class SearchViewController: UIViewController {
     }
 
     
-    func setUpMoviesCvMp() {
-        self.searchCollectionView.dataSource = self
-        self.searchCollectionView.delegate = self
-        self.searchCollectionView.register(SearchCollectionViewCell.nib, forCellWithReuseIdentifier: SearchCollectionViewCell.identifier)
+    func setUpTableView() {
+        self.searchTableView.delegate = self
+        self.searchTableView.dataSource = self
+        self.searchTableView.register(SearchTableViewCell.nib, forCellReuseIdentifier: SearchTableViewCell.identifier)
     }
-
+ 
 
     @IBAction func goToSearch(_ sender: Any) {
         self.recibeSearch = searchTextField.text ?? ""
