@@ -2,6 +2,8 @@
 
 import Foundation
 struct Dates : Codable {
-	var maximum : String?
-	var minimum : String?
+    var maximum : String?
+    var minimum : String?
+
+
 }

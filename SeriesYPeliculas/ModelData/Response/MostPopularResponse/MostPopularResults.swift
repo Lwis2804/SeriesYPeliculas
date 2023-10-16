@@ -3,7 +3,7 @@
 import Foundation
 struct MostPopularResults : Codable {
 	var adult : Bool?
-	var backdrop_path : String?
+    var backdrop_path : String?
     var genre_ids : [Int]?
     var id : Int?
     var original_language : String?
@@ -14,7 +14,9 @@ struct MostPopularResults : Codable {
     var release_date : String?
     var title : String?
     var video : Bool?
-    var vote_average : Int?
+    var vote_average : Double?
     var vote_count : Int?
+
+	
 
 }
