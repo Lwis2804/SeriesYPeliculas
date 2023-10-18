@@ -10,13 +10,16 @@ import UIKit
 class PlayingNowCollectionViewCell: UICollectionViewCell {
     
     
-    @IBOutlet weak var npBackdropPath: UILabel!
-    @IBOutlet weak var npGenreId: UILabel!
-    @IBOutlet weak var npID: UILabel!
-    @IBOutlet weak var npOriginalLanguage: UILabel!
-    @IBOutlet weak var npOverView: UILabel!
-    @IBOutlet weak var npPosterPath: UILabel!
-    @IBOutlet weak var npTitle: UILabel!
+  
+    @IBOutlet weak var npOriginalLanguage: UILabel!{
+        didSet{self.npOriginalLanguage.layer.cornerRadius = 10}
+    }
+    @IBOutlet weak var npOverView: UILabel!{
+        didSet{self.npOverView.layer.cornerRadius = 10}
+    }
+    @IBOutlet weak var npTitle: UILabel!{
+        didSet{self.npTitle.layer.cornerRadius = 10}
+    }
     
     
     override func awakeFromNib() {
@@ -24,12 +27,8 @@ class PlayingNowCollectionViewCell: UICollectionViewCell {
     }
     
     public func setUpNowPlayingMovies (categoria: NowPlayingResult){
-        self.npBackdropPath.text = categoria.backdrop_path
-        self.npGenreId.text = "\(String(describing: categoria.genre_ids))"
-        self.npID.text = "\(categoria.id ?? 0)"
         self.npOriginalLanguage.text = categoria.original_language
         self.npOverView.text = categoria.overview
-        self.npPosterPath.text = categoria.poster_path
         self.npTitle.text = categoria.title
     }
     
