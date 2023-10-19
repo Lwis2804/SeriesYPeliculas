@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBarViewController" customModule="SeriesYPeliculas" customModuleProvider="target">
+            <connections>
+                <outlet property="backGroundImage" destination="okw-7w-IBD" id="oJs-XW-M7D"/>
+                <outlet property="searchBarTable" destination="QbI-NP-u1V" id="2sO-Ep-91e"/>
+                <outlet property="searchButton" destination="JHt-Bf-Hub" id="pur-Iq-h4P"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="okw-7w-IBD">
+                    <rect key="frame" x="12" y="12" width="296" height="544"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHt-Bf-Hub">
+                            <rect key="frame" x="12" y="12" width="272" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="woG-ii-NrR"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Search"/>
+                            <connections>
+                                <action selector="searchMovieBtn:" destination="-1" eventType="touchUpInside" id="myz-Vd-A2C"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QbI-NP-u1V">
+                            <rect key="frame" x="12" y="59" width="272" height="473"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.00086986552919999995" green="0.27776318789999999" blue="0.4812998772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="JHt-Bf-Hub" firstAttribute="leading" secondItem="okw-7w-IBD" secondAttribute="leading" constant="12" id="BbN-rN-Fap"/>
+                        <constraint firstAttribute="trailing" secondItem="QbI-NP-u1V" secondAttribute="trailing" constant="12" id="DFZ-ES-H6g"/>
+                        <constraint firstItem="QbI-NP-u1V" firstAttribute="leading" secondItem="okw-7w-IBD" secondAttribute="leading" constant="12" id="Hlw-5u-UNZ"/>
+                        <constraint firstAttribute="trailing" secondItem="JHt-Bf-Hub" secondAttribute="trailing" constant="12" id="JwN-rD-GfC"/>
+                        <constraint firstItem="JHt-Bf-Hub" firstAttribute="top" secondItem="okw-7w-IBD" secondAttribute="top" constant="12" id="Jwk-0d-3Xn"/>
+                        <constraint firstAttribute="bottom" secondItem="QbI-NP-u1V" secondAttribute="bottom" constant="12" id="OtA-5P-n2h"/>
+                        <constraint firstItem="QbI-NP-u1V" firstAttribute="top" secondItem="JHt-Bf-Hub" secondAttribute="bottom" constant="12" id="aCD-tM-ufk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="okw-7w-IBD" secondAttribute="bottom" constant="12" id="2rY-Wx-IJB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="okw-7w-IBD" secondAttribute="trailing" constant="12" id="9ZL-nr-aQx"/>
+                <constraint firstItem="okw-7w-IBD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="EFk-lc-Lzv"/>
+                <constraint firstItem="okw-7w-IBD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="f9F-8q-ogv"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

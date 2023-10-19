@@ -56,6 +56,9 @@
 		AAA267582ABBF30100727A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA267562ABBF30100727A9E /* LaunchScreen.storyboard */; };
 		AAA2676D2ABBF92100727A9E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2676C2ABBF92100727A9E /* TabBarViewController.swift */; };
 		AAE112E92AD8F0C200C0A97C /* ResultSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE112E82AD8F0C200C0A97C /* ResultSearchResponse.swift */; };
+		AAE9D0AA2AE0BEAE004D2295 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE9D0A82AE0BEAE004D2295 /* SearchBarViewController.swift */; };
+		AAE9D0AB2AE0BEAE004D2295 /* SearchBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE9D0A92AE0BEAE004D2295 /* SearchBarViewController.xib */; };
+		AAE9D0AD2AE0C75E004D2295 /* ExtensionSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE9D0AC2AE0C75E004D2295 /* ExtensionSearchBarViewController.swift */; };
 		AAFE87612AD48CEA0032A7CA /* ExtensionSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE87602AD48CEA0032A7CA /* ExtensionSearch.swift */; };
 		AAFE87652AD48E2E0032A7CA /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE87632AD48E2E0032A7CA /* SearchCollectionViewCell.swift */; };
 		AAFE87662AD48E2E0032A7CA /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFE87642AD48E2E0032A7CA /* SearchCollectionViewCell.xib */; };
@@ -113,6 +116,9 @@
 		AAA267592ABBF30100727A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA2676C2ABBF92100727A9E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		AAE112E82AD8F0C200C0A97C /* ResultSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSearchResponse.swift; sourceTree = "<group>"; };
+		AAE9D0A82AE0BEAE004D2295 /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
+		AAE9D0A92AE0BEAE004D2295 /* SearchBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarViewController.xib; sourceTree = "<group>"; };
+		AAE9D0AC2AE0C75E004D2295 /* ExtensionSearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchBarViewController.swift; sourceTree = "<group>"; };
 		AAFE87602AD48CEA0032A7CA /* ExtensionSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearch.swift; sourceTree = "<group>"; };
 		AAFE87632AD48E2E0032A7CA /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		AAFE87642AD48E2E0032A7CA /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -385,6 +391,7 @@
 		AAA2675F2ABBF54800727A9E /* Vistas */ = {
 			isa = PBXGroup;
 			children = (
+				AAE9D0A72AE0BE0A004D2295 /* SearchUiController */,
 				34AEFF172ACE6E0700EDE29E /* MovieDeatailView */,
 				34AEFF1C2ACE6E0700EDE29E /* SeriesDetailView */,
 				34AEFF112ACE6E0700EDE29E /* PlayingNow */,
@@ -402,6 +409,16 @@
 				AAA2676C2ABBF92100727A9E /* TabBarViewController.swift */,
 			);
 			path = TapBarController;
+			sourceTree = "<group>";
+		};
+		AAE9D0A72AE0BE0A004D2295 /* SearchUiController */ = {
+			isa = PBXGroup;
+			children = (
+				AAE9D0A82AE0BEAE004D2295 /* SearchBarViewController.swift */,
+				AAE9D0AC2AE0C75E004D2295 /* ExtensionSearchBarViewController.swift */,
+				AAE9D0A92AE0BEAE004D2295 /* SearchBarViewController.xib */,
+			);
+			path = SearchUiController;
 			sourceTree = "<group>";
 		};
 		AAFE87622AD48E170032A7CA /* SearchViewCell */ = {
@@ -484,6 +501,7 @@
 				AA2C1D482ACF7FC500C4597F /* PlayingNowCollectionViewCell.xib in Resources */,
 				AA48B1192ACF8AA200CC6D5C /* UpcomingCollectionViewCell.xib in Resources */,
 				34AEFF3A2ACE6E0800EDE29E /* TopRatedViewController.xib in Resources */,
+				AAE9D0AB2AE0BEAE004D2295 /* SearchBarViewController.xib in Resources */,
 				34AEFF0D2ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.xib in Resources */,
 				34AEFF352ACE6E0800EDE29E /* SearchViewController.xib in Resources */,
 				AAFE87662AD48E2E0032A7CA /* SearchCollectionViewCell.xib in Resources */,
@@ -509,6 +527,7 @@
 				AA7D08422ADDE30C0096D191 /* SearchTableViewCell.swift in Sources */,
 				34AEFEFA2ACE6D0B00EDE29E /* ResultsNPResponse.swift in Sources */,
 				34AEFF362ACE6E0800EDE29E /* ExtensionMostPopular.swift in Sources */,
+				AAE9D0AA2AE0BEAE004D2295 /* SearchBarViewController.swift in Sources */,
 				34AEFEEA2ACE6D0200EDE29E /* Movie_WS.swift in Sources */,
 				AAA267502ABBF2FE00727A9E /* ViewController.swift in Sources */,
 				AAA2674C2ABBF2FD00727A9E /* AppDelegate.swift in Sources */,
@@ -522,6 +541,7 @@
 				AA7D08352ADDDF2A0096D191 /* MostPopularResults.swift in Sources */,
 				34AEFF2E2ACE6E0800EDE29E /* MovieDetailViewController.swift in Sources */,
 				AA7D083B2ADDE1130096D191 /* UpcomingResults.swift in Sources */,
+				AAE9D0AD2AE0C75E004D2295 /* ExtensionSearchBarViewController.swift in Sources */,
 				34AEFEFD2ACE6D0B00EDE29E /* TopRatedResponse.swift in Sources */,
 				34AEFF302ACE6E0800EDE29E /* ExtensionUpcomingMovies.swift in Sources */,
 				AA7D083A2ADDE1130096D191 /* Dates.swift in Sources */,
