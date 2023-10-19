@@ -58,7 +58,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.018244078380000001" green="0.58221882579999995" blue="0.73685735460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bZB-3Q-vc7" secondAttribute="bottom" constant="12" id="EtM-qk-x3a"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bZB-3Q-vc7" secondAttribute="trailing" constant="12" id="NbW-yi-rrO"/>

@@ -25,7 +25,7 @@ class TopRatedCollectionViewCell: UICollectionViewCell {
     
     
     public func setUpTopRatedMovies (categoria : TopRatedResults){
-        self.trAdult.text = "\(String(describing: categoria.adult))"
+        self.trAdult.text = categoria.overview
         self.trOriginalLanguage.text = categoria.original_language
         self.trOriginalTitle.text = categoria.original_title
         self.trReleaseDate.text = categoria.release_date
