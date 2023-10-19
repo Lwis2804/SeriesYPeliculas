@@ -9,9 +9,15 @@ import UIKit
 
 class TopRatedViewController: UIViewController {
     
-    @IBOutlet weak var backgorundView: UIView!
-    @IBOutlet weak var lblTopRatedPeliculas: UILabel!
-    @IBOutlet weak var topRatedCollectionView: UICollectionView!
+    @IBOutlet weak var backgorundView: UIView!{
+        didSet{self.backgorundView.layer.cornerRadius = 10}
+    }
+    @IBOutlet weak var lblTopRatedPeliculas: UILabel!{
+        didSet{self.lblTopRatedPeliculas.layer.cornerRadius = 10}
+    }
+    @IBOutlet weak var topRatedCollectionView: UICollectionView!{
+        didSet{self.topRatedCollectionView.layer.cornerRadius = 10}
+    }
     
     
     

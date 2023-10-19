@@ -35,9 +35,10 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="M8Y-YG-Su9">
-                            <rect key="frame" x="12" y="60" width="272" height="476"/>
-                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BJM-ed-k1o">
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="M8Y-YG-Su9">
+                            <rect key="frame" x="12" y="56" width="272" height="476"/>
+                            <color key="backgroundColor" red="0.018244078380000001" green="0.58221882579999995" blue="0.73685735460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="BJM-ed-k1o">
                                 <size key="itemSize" width="128" height="128"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -47,13 +48,13 @@
                     </subviews>
                     <color key="backgroundColor" red="0.00086986552919999995" green="0.27776318789999999" blue="0.4812998772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="M8Y-YG-Su9" firstAttribute="top" secondItem="9ib-zW-aXa" secondAttribute="bottom" constant="12" id="4Mw-NS-hWS"/>
-                        <constraint firstAttribute="trailing" secondItem="M8Y-YG-Su9" secondAttribute="trailing" constant="12" id="9SG-Gb-W5l"/>
+                        <constraint firstItem="M8Y-YG-Su9" firstAttribute="top" secondItem="9ib-zW-aXa" secondAttribute="bottom" constant="12" id="4FH-Wl-XOy"/>
+                        <constraint firstAttribute="bottom" secondItem="M8Y-YG-Su9" secondAttribute="bottom" constant="12" id="7my-fe-CZk"/>
                         <constraint firstAttribute="trailing" secondItem="9ib-zW-aXa" secondAttribute="trailing" constant="12" id="9cz-vO-a8x"/>
-                        <constraint firstAttribute="bottom" secondItem="M8Y-YG-Su9" secondAttribute="bottom" constant="12" id="HDn-fE-W3X"/>
-                        <constraint firstItem="M8Y-YG-Su9" firstAttribute="leading" secondItem="MBw-1a-e3H" secondAttribute="leading" constant="12" id="IL6-AC-4r7"/>
                         <constraint firstItem="9ib-zW-aXa" firstAttribute="leading" secondItem="MBw-1a-e3H" secondAttribute="leading" constant="12" id="h8l-mP-HdN"/>
                         <constraint firstItem="9ib-zW-aXa" firstAttribute="top" secondItem="MBw-1a-e3H" secondAttribute="top" constant="12" id="jBu-1r-Ux8"/>
+                        <constraint firstItem="M8Y-YG-Su9" firstAttribute="leading" secondItem="MBw-1a-e3H" secondAttribute="leading" constant="12" id="qMc-5q-XNp"/>
+                        <constraint firstAttribute="trailing" secondItem="M8Y-YG-Su9" secondAttribute="trailing" constant="12" id="zYB-y7-fPl"/>
                     </constraints>
                 </view>
             </subviews>

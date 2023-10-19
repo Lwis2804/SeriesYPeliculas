@@ -9,9 +9,15 @@ import UIKit
 
 class UpcomingViewController: UIViewController {
     
-    @IBOutlet weak var backgroungView: UIView!
-    @IBOutlet weak var upcomingTitle: UILabel!
-    @IBOutlet weak var upcomingCollectionView: UICollectionView!
+    @IBOutlet weak var backgroungView: UIView!{
+        didSet{self.backgroungView.layer.cornerRadius = 10}
+    }
+    @IBOutlet weak var upcomingTitle: UILabel!{
+        didSet{self.upcomingTitle.layer.cornerRadius = 10}
+    }
+    @IBOutlet weak var upcomingCollectionView: UICollectionView!{
+        didSet{self.upcomingCollectionView.layer.cornerRadius = 10}
+    }
     
     
     var arrUpcomingmovies : [UpcomingResults] = []

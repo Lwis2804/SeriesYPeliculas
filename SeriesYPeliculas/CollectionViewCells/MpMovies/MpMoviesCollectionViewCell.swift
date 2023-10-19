@@ -9,11 +9,21 @@ import UIKit
 
 class MpMoviesCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var backgroundImage: UIView!
-    @IBOutlet weak var mpOriginalLanguage: UILabel!
-    @IBOutlet weak var mpOverView: UILabel!
-    @IBOutlet weak var mpReleaseDate: UILabel!
-    @IBOutlet weak var mpVoteAverage: UILabel!
+    @IBOutlet weak var backgroundImage: UIView!{
+        didSet{self.backgroundImage.layer.cornerRadius = 10}
+    }
+    @IBOutlet weak var mpOriginalLanguage: UILabel!{
+        didSet{self.mpOriginalLanguage.layer.cornerRadius = 10}
+    }
+    @IBOutlet weak var mpOverView: UILabel!{
+        didSet{self.mpOverView.layer.cornerRadius = 10}
+    }
+    @IBOutlet weak var mpReleaseDate: UILabel!{
+        didSet{self.mpReleaseDate.layer.cornerRadius = 10}
+    }
+    @IBOutlet weak var mpVoteAverage: UILabel!{
+        didSet{self.mpVoteAverage.layer.cornerRadius = 10}
+    }
     
     
     override func awakeFromNib() {

@@ -10,10 +10,18 @@ import UIKit
 class UpcomingCollectionViewCell: UICollectionViewCell {
     
     
-    @IBOutlet weak var upOriginalTitle: UILabel!
-    @IBOutlet weak var upPosterPath: UILabel!
-    @IBOutlet weak var upReleaseDate: UILabel!
-    @IBOutlet weak var upVoteCount: UILabel!
+    @IBOutlet weak var upOriginalTitle: UILabel!{
+        didSet{self.upOriginalTitle.layer.cornerRadius = 5}
+    }
+    @IBOutlet weak var upPosterPath: UILabel!{
+        didSet{self.upPosterPath.layer.cornerRadius = 5}
+    }
+    @IBOutlet weak var upReleaseDate: UILabel!{
+        didSet{self.upReleaseDate.layer.cornerRadius = 5}
+    }
+    @IBOutlet weak var upVoteCount: UILabel!{
+        didSet{self.upVoteCount.layer.cornerRadius = 5}
+    }
     
 
     override func awakeFromNib() {
@@ -22,9 +30,9 @@ class UpcomingCollectionViewCell: UICollectionViewCell {
 
     public func setUpUpcomingMovies (categoria : UpcomingResults) {
         self.upOriginalTitle.text = categoria.original_title
-        self.upPosterPath.text = categoria.poster_path
+        self.upPosterPath.text = categoria.title
         self.upReleaseDate.text = categoria.release_date
-        self.upVoteCount.text = "\(String(describing: categoria.vote_count))"
+        self.upVoteCount.text = categoria.overview
     }
     
     
