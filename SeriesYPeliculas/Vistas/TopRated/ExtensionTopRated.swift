@@ -25,7 +25,7 @@ extension TopRatedViewController : UICollectionViewDelegate & UICollectionViewDa
 extension TopRatedViewController : UICollectionViewDelegateFlowLayout {
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: CGFloat(165.0), height: CGFloat(290.0))
+        return CGSize(width: CGFloat(165.5), height: CGFloat(290.0))
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
