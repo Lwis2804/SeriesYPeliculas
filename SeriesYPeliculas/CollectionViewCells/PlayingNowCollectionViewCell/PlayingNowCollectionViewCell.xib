@@ -84,6 +84,7 @@
                 <constraint firstAttribute="bottom" secondItem="LOB-PI-NgJ" secondAttribute="bottom" constant="2" id="boD-x3-Qhu"/>
             </constraints>
             <connections>
+                <outlet property="imgPoster" destination="uRz-qG-RgR" id="buV-hs-MFi"/>
                 <outlet property="npOriginalLanguage" destination="swQ-ND-1UX" id="RV9-Ss-0Kz"/>
                 <outlet property="npOverView" destination="FwU-Wo-aWJ" id="yNA-Ja-m8W"/>
                 <outlet property="npTitle" destination="uK0-Hj-WIi" id="KGV-sF-IuA"/>

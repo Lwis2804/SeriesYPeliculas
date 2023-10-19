@@ -60,8 +60,6 @@
 		AAE9D0AB2AE0BEAE004D2295 /* SearchBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE9D0A92AE0BEAE004D2295 /* SearchBarViewController.xib */; };
 		AAE9D0AD2AE0C75E004D2295 /* ExtensionSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE9D0AC2AE0C75E004D2295 /* ExtensionSearchBarViewController.swift */; };
 		AAFE87612AD48CEA0032A7CA /* ExtensionSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE87602AD48CEA0032A7CA /* ExtensionSearch.swift */; };
-		AAFE87652AD48E2E0032A7CA /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE87632AD48E2E0032A7CA /* SearchCollectionViewCell.swift */; };
-		AAFE87662AD48E2E0032A7CA /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFE87642AD48E2E0032A7CA /* SearchCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,8 +118,6 @@
 		AAE9D0A92AE0BEAE004D2295 /* SearchBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarViewController.xib; sourceTree = "<group>"; };
 		AAE9D0AC2AE0C75E004D2295 /* ExtensionSearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchBarViewController.swift; sourceTree = "<group>"; };
 		AAFE87602AD48CEA0032A7CA /* ExtensionSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearch.swift; sourceTree = "<group>"; };
-		AAFE87632AD48E2E0032A7CA /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
-		AAFE87642AD48E2E0032A7CA /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,7 +305,6 @@
 		AA6105A92ABCDB6F007E2EC3 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				AAFE87622AD48E170032A7CA /* SearchViewCell */,
 				AA48B1152ACF8A8800CC6D5C /* UpcomingCollectionViewCell */,
 				AA48B1102ACF871000CC6D5C /* TopRatedCollectionViewCell */,
 				AA2C1D442ACF7F7200C4597F /* PlayingNowCollectionViewCell */,
@@ -421,15 +416,6 @@
 			path = SearchUiController;
 			sourceTree = "<group>";
 		};
-		AAFE87622AD48E170032A7CA /* SearchViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				AAFE87632AD48E2E0032A7CA /* SearchCollectionViewCell.swift */,
-				AAFE87642AD48E2E0032A7CA /* SearchCollectionViewCell.xib */,
-			);
-			path = SearchViewCell;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -504,7 +490,6 @@
 				AAE9D0AB2AE0BEAE004D2295 /* SearchBarViewController.xib in Resources */,
 				34AEFF0D2ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.xib in Resources */,
 				34AEFF352ACE6E0800EDE29E /* SearchViewController.xib in Resources */,
-				AAFE87662AD48E2E0032A7CA /* SearchCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +503,6 @@
 				34AEFF2D2ACE6E0800EDE29E /* UpcomingViewController.swift in Sources */,
 				34AEFEFB2ACE6D0B00EDE29E /* DatesNPResponse.swift in Sources */,
 				AAE112E92AD8F0C200C0A97C /* ResultSearchResponse.swift in Sources */,
-				AAFE87652AD48E2E0032A7CA /* SearchCollectionViewCell.swift in Sources */,
 				34AEFF382ACE6E0800EDE29E /* MostPopularViewController.swift in Sources */,
 				34AEFEFC2ACE6D0B00EDE29E /* NowPlayingResponse.swift in Sources */,
 				34AEFF392ACE6E0800EDE29E /* TopRatedViewController.swift in Sources */,

@@ -12,7 +12,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="SeriesYPeliculas" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundImage" destination="Q9T-Fs-0UW" id="4gr-c7-kE6"/>
-                <outlet property="btnSearch" destination="KIW-nv-2A8" id="HW5-XO-BRV"/>
                 <outlet property="searchTableView" destination="Yi9-5q-Za2" id="Xfz-C8-Eay"/>
                 <outlet property="searchTextField" destination="v9m-US-BnE" id="i5Q-YQ-G3F"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -31,34 +30,20 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIW-nv-2A8">
-                            <rect key="frame" x="12" y="58" width="272" height="35"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="35" id="Ry6-DK-LF4"/>
-                            </constraints>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Search"/>
-                            <connections>
-                                <action selector="goToSearch:" destination="-1" eventType="touchUpInside" id="d5c-dZ-jlE"/>
-                            </connections>
-                        </button>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yi9-5q-Za2">
-                            <rect key="frame" x="12" y="105" width="272" height="427"/>
+                            <rect key="frame" x="12" y="58" width="272" height="474"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
                     </subviews>
                     <color key="backgroundColor" red="0.00086986552919999995" green="0.27776318789999999" blue="0.4812998772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="v9m-US-BnE" firstAttribute="top" secondItem="Q9T-Fs-0UW" secondAttribute="top" constant="12" id="1Nh-ha-1VE"/>
-                        <constraint firstItem="KIW-nv-2A8" firstAttribute="top" secondItem="v9m-US-BnE" secondAttribute="bottom" constant="12" id="2Sb-Yu-dxY"/>
                         <constraint firstAttribute="trailing" secondItem="Yi9-5q-Za2" secondAttribute="trailing" constant="12" id="6O0-nf-Ukt"/>
                         <constraint firstItem="Yi9-5q-Za2" firstAttribute="leading" secondItem="Q9T-Fs-0UW" secondAttribute="leading" constant="12" id="LcA-Kx-TNh"/>
                         <constraint firstItem="v9m-US-BnE" firstAttribute="leading" secondItem="Q9T-Fs-0UW" secondAttribute="leading" constant="12" id="Mh4-DX-xsH"/>
-                        <constraint firstItem="Yi9-5q-Za2" firstAttribute="top" secondItem="KIW-nv-2A8" secondAttribute="bottom" constant="12" id="PX2-rS-r7H"/>
-                        <constraint firstAttribute="trailing" secondItem="KIW-nv-2A8" secondAttribute="trailing" constant="12" id="Zvk-DN-l4K"/>
                         <constraint firstAttribute="trailing" secondItem="v9m-US-BnE" secondAttribute="trailing" constant="12" id="dCV-jI-XI6"/>
-                        <constraint firstItem="KIW-nv-2A8" firstAttribute="leading" secondItem="Q9T-Fs-0UW" secondAttribute="leading" constant="12" id="nUs-zw-qXa"/>
                         <constraint firstAttribute="bottom" secondItem="Yi9-5q-Za2" secondAttribute="bottom" constant="12" id="tKy-QH-dU9"/>
+                        <constraint firstItem="Yi9-5q-Za2" firstAttribute="top" secondItem="v9m-US-BnE" secondAttribute="bottom" constant="12" id="uIe-Qt-m7l"/>
                     </constraints>
                 </view>
             </subviews>
