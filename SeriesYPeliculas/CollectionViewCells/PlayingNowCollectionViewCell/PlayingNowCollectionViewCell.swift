@@ -18,7 +18,11 @@ class PlayingNowCollectionViewCell: UICollectionViewCell {
         didSet{self.npOverView.layer.cornerRadius = 10}
     }
     @IBOutlet weak var npTitle: UILabel!{
-        didSet{self.npTitle.layer.cornerRadius = 10}
+        didSet{self.npTitle.layer.cornerRadius = 5
+            self.npTitle.layer.masksToBounds = true
+            
+        }
+        
     }
     
     

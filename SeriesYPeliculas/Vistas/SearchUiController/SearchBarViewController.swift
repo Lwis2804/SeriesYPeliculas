@@ -16,6 +16,8 @@ class SearchBarViewController: UIViewController {
     
     
     let search = UISearchController(searchResultsController: nil)
+    var isSearchEmpty : Bool {return search.searchBar.text?.isEmpty ?? true}
+    var isFiltering : Bool {return search.isActive && !isSearchEmpty}
     var arrSearch: [ResultSearchResponse] = []
     var recibeSearch : String = ""
     
@@ -24,10 +26,11 @@ class SearchBarViewController: UIViewController {
         
         setUpSearchBar()
         setUpSearchBarProperties()
-        setUpBarTokens()
+        //  setUpBarTokens()
+        setUptableSearch()
     }
     
-    private func getSearchMocies(withSearch search : String) {
+    func getSearchMocies(withSearch search : String) {
         let movieWS = Movie_WS()
         movieWS.getSearchResponse(withSearch: search) { respuesta, error in
             if error == nil {
@@ -42,19 +45,20 @@ class SearchBarViewController: UIViewController {
             }
         }
     }
-
     
-     func setUptableSearch() {
+    
+    func setUptableSearch() {
         self.searchBarTable.delegate = self
         self.searchBarTable.dataSource = self
         self.searchBarTable.register(SearchTableViewCell.nib, forCellReuseIdentifier: SearchTableViewCell.identifier)
     }
     
     private func setUpSearchBar() {
+        self.search.searchBar.searchTextField.delegate = self
         search.obscuresBackgroundDuringPresentation = false
         search.searchBar.searchTextField.placeholder = "Search your movie"
-        search.searchBar.scopeButtonTitles = ["Playing Now","Most popular","Top Rated"," Upcoming"]
         self.navigationItem.searchController = search
+        definesPresentationContext = true
     }
     
     private func setUpSearchBarProperties() {
@@ -63,19 +67,20 @@ class SearchBarViewController: UIViewController {
         search.automaticallyShowsSearchResultsController = true
     }
     
-    private func setUpBarTokens() {
-        let tagToken = UISearchToken(icon: UIImage(systemName: "tag.fil"), text: "Movies")
-        search.searchBar.searchTextField.insertToken(tagToken, at: 0)
-    }
+    // private func setUpBarTokens() {
+    //      let tagToken = UISearchToken(icon: UIImage(systemName: "tag.fil"), text: "Movies")
+    //      search.searchBar.searchTextField.insertToken(tagToken, at: 0)
+    //  }
     
-    @IBAction func searchMovieBtn(_ sender: Any) {
-      //  self.recibeSearch =
-        arrSearch.removeAll()
-        if recibeSearch != "" {
-            getSearchMocies(withSearch: recibeSearch)
-        } else {
-            self.showAlert(WithTitle: "Cuidado", andMessage: "Favor de llenar la busqueda")
-        }
-    }
     
+    /*
+     @IBAction func searchMovieBtn(_ sender: Any) {
+     arrSearch.removeAll()
+     if self.search.searchBar.searchTextField.text != "" {
+     getSearchMocies(withSearch: self.search.searchBar.searchTextField.text ?? "")
+     } else {
+     self.showAlert(WithTitle: "Cuidado", andMessage: "Favor de llenar la busqueda")
+     }
+     }
+     */
 }

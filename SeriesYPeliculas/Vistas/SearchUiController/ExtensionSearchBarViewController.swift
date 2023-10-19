@@ -16,3 +16,36 @@ extension SearchBarViewController : UITableViewDelegate & UITableViewDataSource 
     
     
 }
+
+
+extension SearchBarViewController : UISearchResultsUpdating{
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
+    
+}
+
+
+extension SearchBarViewController : UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField.text == ""{
+            getSearchMocies(withSearch: "") // busqueda con campo vacio, actualiza con letra borrada 
+            return true
+        }else {
+            getSearchMocies(withSearch: textField.text ?? "")
+            return true
+        }
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if string == "" && range.length == 1 && range.location == 0{
+            getSearchMocies(withSearch: "")
+            return true
+        }
+        getSearchMocies(withSearch: textField.text ?? "")
+        return true
+    }
+    
+}
