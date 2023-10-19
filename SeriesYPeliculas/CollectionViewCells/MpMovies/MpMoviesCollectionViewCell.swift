@@ -9,6 +9,7 @@ import UIKit
 
 class MpMoviesCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var mostPopularimage: UIImageView!
     @IBOutlet weak var backgroundImage: UIView!{
         didSet{self.backgroundImage.layer.cornerRadius = 10}
     }
@@ -25,9 +26,12 @@ class MpMoviesCollectionViewCell: UICollectionViewCell {
         didSet{self.mpVoteAverage.layer.cornerRadius = 10}
     }
     
+    var downloadTask : URLSessionDownloadTask?
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        downloadTask?.cancel()
+        downloadTask = nil
     }
     
     public func setUpMoviesCollectionViewMp (categoria: MostPopularResults){
@@ -35,6 +39,11 @@ class MpMoviesCollectionViewCell: UICollectionViewCell {
         self.mpOverView.text = categoria.overview
         self.mpReleaseDate.text = categoria.release_date
         self.mpVoteAverage.text = categoria.title
+        
+        if let urlPoster = categoria.poster_path,
+           let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)"){
+            downloadTask = mostPopularimage.loadImage(url: url)
+        }
     }
     
     
