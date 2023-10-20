@@ -22,7 +22,7 @@
                         <rect key="frame" x="4" y="4" width="162" height="282"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="originalTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPA-Td-CBi">
-                                <rect key="frame" x="6" y="100" width="150" height="16"/>
+                                <rect key="frame" x="6" y="190" width="150" height="16"/>
                                 <color key="backgroundColor" red="0.018244078380000001" green="0.58221882579999995" blue="0.73685735460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="PDh-X5-6k2"/>
@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALm-dF-clG">
-                                <rect key="frame" x="6" y="120" width="150" height="16"/>
+                                <rect key="frame" x="6" y="210" width="150" height="16"/>
                                 <color key="backgroundColor" red="0.018244078380000001" green="0.58221882579999995" blue="0.73685735460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="saT-wn-ilp"/>
@@ -42,7 +42,7 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ReleaseDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVd-jE-zAK">
-                                <rect key="frame" x="6" y="140" width="150" height="16"/>
+                                <rect key="frame" x="6" y="230" width="150" height="16"/>
                                 <color key="backgroundColor" red="0.018244078380000001" green="0.58221882579999995" blue="0.73685735460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="QBb-Ga-kVR"/>
@@ -52,18 +52,18 @@
                                 <color key="highlightedColor" red="0.00086986552919999995" green="0.27776318789999999" blue="0.4812998772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="overview" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbA-QQ-DzB">
-                                <rect key="frame" x="6" y="160" width="150" height="116"/>
+                                <rect key="frame" x="6" y="250" width="150" height="26"/>
                                 <color key="backgroundColor" red="0.018244078380000001" green="0.58221882579999995" blue="0.73685735460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.zigzag.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-EJ-fWm">
-                                <rect key="frame" x="32" y="7.6666666666666643" width="98" height="87"/>
+                                <rect key="frame" x="20" y="7.6666666666666572" width="122" height="177"/>
                                 <color key="backgroundColor" red="0.018244078380000001" green="0.58221882579999995" blue="0.73685735460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="9cL-HT-FRx"/>
+                                    <constraint firstAttribute="height" constant="180" id="9cL-HT-FRx"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -72,7 +72,7 @@
                             <constraint firstAttribute="trailing" secondItem="ALm-dF-clG" secondAttribute="trailing" constant="6" id="5Va-7R-ph1"/>
                             <constraint firstItem="SbA-QQ-DzB" firstAttribute="top" secondItem="OVd-jE-zAK" secondAttribute="bottom" constant="4" id="94f-dU-Pf5"/>
                             <constraint firstItem="aPA-Td-CBi" firstAttribute="top" secondItem="KBX-EJ-fWm" secondAttribute="bottom" constant="4" id="9JB-TE-Zkx"/>
-                            <constraint firstAttribute="trailing" secondItem="KBX-EJ-fWm" secondAttribute="trailing" constant="32" id="EIL-cR-JjW"/>
+                            <constraint firstAttribute="trailing" secondItem="KBX-EJ-fWm" secondAttribute="trailing" constant="20" id="EIL-cR-JjW"/>
                             <constraint firstItem="aPA-Td-CBi" firstAttribute="leading" secondItem="LWF-1e-PGD" secondAttribute="leading" constant="6" id="JhF-iR-m1o"/>
                             <constraint firstAttribute="trailing" secondItem="SbA-QQ-DzB" secondAttribute="trailing" constant="6" id="XFk-fj-9WR"/>
                             <constraint firstItem="ALm-dF-clG" firstAttribute="leading" secondItem="LWF-1e-PGD" secondAttribute="leading" constant="6" id="XvM-UP-UkV"/>
@@ -84,7 +84,7 @@
                             <constraint firstAttribute="trailing" secondItem="OVd-jE-zAK" secondAttribute="trailing" constant="6" id="nKt-FY-Xwk"/>
                             <constraint firstItem="ALm-dF-clG" firstAttribute="top" secondItem="aPA-Td-CBi" secondAttribute="bottom" constant="4" id="puH-TZ-o8w"/>
                             <constraint firstAttribute="trailing" secondItem="aPA-Td-CBi" secondAttribute="trailing" constant="6" id="qC6-ev-Lyg"/>
-                            <constraint firstItem="KBX-EJ-fWm" firstAttribute="leading" secondItem="LWF-1e-PGD" secondAttribute="leading" constant="32" id="weP-rK-bmE"/>
+                            <constraint firstItem="KBX-EJ-fWm" firstAttribute="leading" secondItem="LWF-1e-PGD" secondAttribute="leading" constant="20" id="weP-rK-bmE"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -97,6 +97,7 @@
                 <constraint firstAttribute="bottom" secondItem="LWF-1e-PGD" secondAttribute="bottom" constant="4" id="nq8-pu-1oe"/>
             </constraints>
             <connections>
+                <outlet property="imgUpcoming" destination="KBX-EJ-fWm" id="Myy-Ru-rxp"/>
                 <outlet property="upOriginalTitle" destination="aPA-Td-CBi" id="qfI-Sg-VkN"/>
                 <outlet property="upPosterPath" destination="ALm-dF-clG" id="hMN-ar-tSx"/>
                 <outlet property="upReleaseDate" destination="OVd-jE-zAK" id="yBG-sO-vgN"/>
