@@ -12,16 +12,24 @@ class UpcomingCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imgUpcoming: UIImageView!
     @IBOutlet weak var upOriginalTitle: UILabel!{
-        didSet{self.upOriginalTitle.layer.cornerRadius = 5}
+        didSet{self.upOriginalTitle.layer.cornerRadius = 5
+            self.upOriginalTitle.layer.masksToBounds = true
+        }
     }
     @IBOutlet weak var upPosterPath: UILabel!{
-        didSet{self.upPosterPath.layer.cornerRadius = 5}
+        didSet{self.upPosterPath.layer.cornerRadius = 5
+            self.upPosterPath.layer.masksToBounds = true
+        }
     }
     @IBOutlet weak var upReleaseDate: UILabel!{
-        didSet{self.upReleaseDate.layer.cornerRadius = 5}
+        didSet{self.upReleaseDate.layer.cornerRadius = 5
+            self.upReleaseDate.layer.masksToBounds = true
+        }
     }
     @IBOutlet weak var upVoteCount: UILabel!{
-        didSet{self.upVoteCount.layer.cornerRadius = 5}
+        didSet{self.upVoteCount.layer.cornerRadius = 5
+            self.upVoteCount.layer.masksToBounds = true
+        }
     }
     
     var downloadTask : URLSessionDownloadTask?

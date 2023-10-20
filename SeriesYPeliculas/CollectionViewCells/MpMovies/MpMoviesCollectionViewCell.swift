@@ -9,21 +9,35 @@ import UIKit
 
 class MpMoviesCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var mostPopularimage: UIImageView!
+    @IBOutlet weak var mostPopularimage: UIImageView!{
+        didSet{self.mostPopularimage.layer.cornerRadius = 5
+            self.mostPopularimage.layer.masksToBounds = true
+        }
+    }
     @IBOutlet weak var backgroundImage: UIView!{
-        didSet{self.backgroundImage.layer.cornerRadius = 10}
+        didSet{self.backgroundImage.layer.cornerRadius = 5
+            self.backgroundImage.layer.masksToBounds = true
+        }
     }
     @IBOutlet weak var mpOriginalLanguage: UILabel!{
-        didSet{self.mpOriginalLanguage.layer.cornerRadius = 10}
+        didSet{self.mpOriginalLanguage.layer.cornerRadius = 5
+            self.mpOriginalLanguage.layer.masksToBounds = true
+        }
     }
     @IBOutlet weak var mpOverView: UILabel!{
-        didSet{self.mpOverView.layer.cornerRadius = 10}
+        didSet{self.mpOverView.layer.cornerRadius = 5
+            self.mpOverView.layer.masksToBounds = true
+        }
     }
     @IBOutlet weak var mpReleaseDate: UILabel!{
-        didSet{self.mpReleaseDate.layer.cornerRadius = 10}
+        didSet{self.mpReleaseDate.layer.cornerRadius = 5
+            self.mpReleaseDate.layer.masksToBounds = true
+        }
     }
     @IBOutlet weak var mpVoteAverage: UILabel!{
-        didSet{self.mpVoteAverage.layer.cornerRadius = 10}
+        didSet{self.mpVoteAverage.layer.cornerRadius = 5
+            self.mpVoteAverage.layer.masksToBounds = true
+        }
     }
     
     var downloadTask : URLSessionDownloadTask?

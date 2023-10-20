@@ -9,12 +9,36 @@ import UIKit
 
 class TopRatedCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var imgTopRated: UIImageView!
-    @IBOutlet weak var backgroundImage: UIView!
-    @IBOutlet weak var trAdult: UILabel!
-    @IBOutlet weak var trOriginalLanguage: UILabel!
-    @IBOutlet weak var trOriginalTitle: UILabel!
-    @IBOutlet weak var trReleaseDate: UILabel!
+    @IBOutlet weak var imgTopRated: UIImageView!{
+        didSet{self.imgTopRated.layer.cornerRadius = 5
+            self.imgTopRated.layer.masksToBounds = true
+        }
+    }
+    @IBOutlet weak var backgroundImage: UIView!{
+        didSet{self.backgroundImage.layer.cornerRadius = 5
+            self.backgroundImage.layer.masksToBounds = true
+        }
+    }
+    @IBOutlet weak var trAdult: UILabel!{
+        didSet{self.trAdult.layer.cornerRadius = 5
+            self.trAdult.layer.masksToBounds = true
+        }
+    }
+    @IBOutlet weak var trOriginalLanguage: UILabel!{
+        didSet{self.trOriginalLanguage.layer.cornerRadius = 5
+            self.trOriginalLanguage.layer.masksToBounds = true
+        }
+    }
+    @IBOutlet weak var trOriginalTitle: UILabel!{
+        didSet{self.trOriginalTitle.layer.cornerRadius = 5
+            self.trOriginalTitle.layer.masksToBounds = true
+        }
+    }
+    @IBOutlet weak var trReleaseDate: UILabel!{
+        didSet{self.trReleaseDate.layer.cornerRadius = 5
+            self.trReleaseDate.layer.masksToBounds = true
+        }
+    }
     
     var downloadTask : URLSessionDownloadTask?
     

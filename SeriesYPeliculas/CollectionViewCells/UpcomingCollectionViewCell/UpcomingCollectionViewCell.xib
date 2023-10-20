@@ -58,8 +58,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.zigzag.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-EJ-fWm">
-                                <rect key="frame" x="20" y="7.6666666666666572" width="122" height="177"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.zigzag.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-EJ-fWm">
+                                <rect key="frame" x="15" y="7.6666666666666572" width="132" height="177"/>
                                 <color key="backgroundColor" red="0.018244078380000001" green="0.58221882579999995" blue="0.73685735460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <constraints>
@@ -72,7 +72,7 @@
                             <constraint firstAttribute="trailing" secondItem="ALm-dF-clG" secondAttribute="trailing" constant="6" id="5Va-7R-ph1"/>
                             <constraint firstItem="SbA-QQ-DzB" firstAttribute="top" secondItem="OVd-jE-zAK" secondAttribute="bottom" constant="4" id="94f-dU-Pf5"/>
                             <constraint firstItem="aPA-Td-CBi" firstAttribute="top" secondItem="KBX-EJ-fWm" secondAttribute="bottom" constant="4" id="9JB-TE-Zkx"/>
-                            <constraint firstAttribute="trailing" secondItem="KBX-EJ-fWm" secondAttribute="trailing" constant="20" id="EIL-cR-JjW"/>
+                            <constraint firstAttribute="trailing" secondItem="KBX-EJ-fWm" secondAttribute="trailing" constant="15" id="EIL-cR-JjW"/>
                             <constraint firstItem="aPA-Td-CBi" firstAttribute="leading" secondItem="LWF-1e-PGD" secondAttribute="leading" constant="6" id="JhF-iR-m1o"/>
                             <constraint firstAttribute="trailing" secondItem="SbA-QQ-DzB" secondAttribute="trailing" constant="6" id="XFk-fj-9WR"/>
                             <constraint firstItem="ALm-dF-clG" firstAttribute="leading" secondItem="LWF-1e-PGD" secondAttribute="leading" constant="6" id="XvM-UP-UkV"/>
@@ -84,7 +84,7 @@
                             <constraint firstAttribute="trailing" secondItem="OVd-jE-zAK" secondAttribute="trailing" constant="6" id="nKt-FY-Xwk"/>
                             <constraint firstItem="ALm-dF-clG" firstAttribute="top" secondItem="aPA-Td-CBi" secondAttribute="bottom" constant="4" id="puH-TZ-o8w"/>
                             <constraint firstAttribute="trailing" secondItem="aPA-Td-CBi" secondAttribute="trailing" constant="6" id="qC6-ev-Lyg"/>
-                            <constraint firstItem="KBX-EJ-fWm" firstAttribute="leading" secondItem="LWF-1e-PGD" secondAttribute="leading" constant="20" id="weP-rK-bmE"/>
+                            <constraint firstItem="KBX-EJ-fWm" firstAttribute="leading" secondItem="LWF-1e-PGD" secondAttribute="leading" constant="15" id="weP-rK-bmE"/>
                         </constraints>
                     </view>
                 </subviews>
