@@ -34,19 +34,13 @@ class MovieDetailViewController: UIViewController {
         didSet{self.repartoCollectionView.layer.cornerRadius = 10}
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+    var playingNowResult : NowPlayingResult?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.lblDateDetail.text = playingNowResult?.release_date
 
     }
 

@@ -28,8 +28,8 @@ class PlayingNowViewController: UIViewController {
     
     
     var arrNowPlayingMovies: [NowPlayingResult] = []
-    let myCellWidth = UIScreen.main.bounds.width / 2
-    let myCellHigh = UIScreen.main.bounds.height / 2
+    var sdStringImageTitle : String = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
