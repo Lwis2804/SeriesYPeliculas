@@ -26,8 +26,6 @@
 		34AEFF312ACE6E0800EDE29E /* UpcomingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34AEFF1B2ACE6E0700EDE29E /* UpcomingViewController.xib */; };
 		34AEFF322ACE6E0800EDE29E /* SeriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFF1D2ACE6E0700EDE29E /* SeriesDetailViewController.swift */; };
 		34AEFF332ACE6E0800EDE29E /* SeriesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34AEFF1E2ACE6E0700EDE29E /* SeriesDetailViewController.xib */; };
-		34AEFF342ACE6E0800EDE29E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFF202ACE6E0700EDE29E /* SearchViewController.swift */; };
-		34AEFF352ACE6E0800EDE29E /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34AEFF212ACE6E0700EDE29E /* SearchViewController.xib */; };
 		34AEFF362ACE6E0800EDE29E /* ExtensionMostPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFF232ACE6E0800EDE29E /* ExtensionMostPopular.swift */; };
 		34AEFF372ACE6E0800EDE29E /* MostPopularViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34AEFF242ACE6E0800EDE29E /* MostPopularViewController.xib */; };
 		34AEFF382ACE6E0800EDE29E /* MostPopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEFF252ACE6E0800EDE29E /* MostPopularViewController.swift */; };
@@ -59,7 +57,6 @@
 		AAE9D0AA2AE0BEAE004D2295 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE9D0A82AE0BEAE004D2295 /* SearchBarViewController.swift */; };
 		AAE9D0AB2AE0BEAE004D2295 /* SearchBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE9D0A92AE0BEAE004D2295 /* SearchBarViewController.xib */; };
 		AAE9D0AD2AE0C75E004D2295 /* ExtensionSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE9D0AC2AE0C75E004D2295 /* ExtensionSearchBarViewController.swift */; };
-		AAFE87612AD48CEA0032A7CA /* ExtensionSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE87602AD48CEA0032A7CA /* ExtensionSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,8 +79,6 @@
 		34AEFF1B2ACE6E0700EDE29E /* UpcomingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpcomingViewController.xib; sourceTree = "<group>"; };
 		34AEFF1D2ACE6E0700EDE29E /* SeriesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesDetailViewController.swift; sourceTree = "<group>"; };
 		34AEFF1E2ACE6E0700EDE29E /* SeriesDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeriesDetailViewController.xib; sourceTree = "<group>"; };
-		34AEFF202ACE6E0700EDE29E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		34AEFF212ACE6E0700EDE29E /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		34AEFF232ACE6E0800EDE29E /* ExtensionMostPopular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionMostPopular.swift; sourceTree = "<group>"; };
 		34AEFF242ACE6E0800EDE29E /* MostPopularViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MostPopularViewController.xib; sourceTree = "<group>"; };
 		34AEFF252ACE6E0800EDE29E /* MostPopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostPopularViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +112,6 @@
 		AAE9D0A82AE0BEAE004D2295 /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
 		AAE9D0A92AE0BEAE004D2295 /* SearchBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarViewController.xib; sourceTree = "<group>"; };
 		AAE9D0AC2AE0C75E004D2295 /* ExtensionSearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchBarViewController.swift; sourceTree = "<group>"; };
-		AAFE87602AD48CEA0032A7CA /* ExtensionSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,16 +237,6 @@
 				34AEFF1E2ACE6E0700EDE29E /* SeriesDetailViewController.xib */,
 			);
 			path = SeriesDetailView;
-			sourceTree = "<group>";
-		};
-		34AEFF1F2ACE6E0700EDE29E /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				34AEFF202ACE6E0700EDE29E /* SearchViewController.swift */,
-				AAFE87602AD48CEA0032A7CA /* ExtensionSearch.swift */,
-				34AEFF212ACE6E0700EDE29E /* SearchViewController.xib */,
-			);
-			path = Search;
 			sourceTree = "<group>";
 		};
 		34AEFF222ACE6E0800EDE29E /* MostPopular */ = {
@@ -393,7 +377,6 @@
 				34AEFF222ACE6E0800EDE29E /* MostPopular */,
 				34AEFF262ACE6E0800EDE29E /* TopRated */,
 				34AEFF152ACE6E0700EDE29E /* Upcoming */,
-				34AEFF1F2ACE6E0700EDE29E /* Search */,
 			);
 			path = Vistas;
 			sourceTree = "<group>";
@@ -489,7 +472,6 @@
 				34AEFF3A2ACE6E0800EDE29E /* TopRatedViewController.xib in Resources */,
 				AAE9D0AB2AE0BEAE004D2295 /* SearchBarViewController.xib in Resources */,
 				34AEFF0D2ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.xib in Resources */,
-				34AEFF352ACE6E0800EDE29E /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,10 +513,8 @@
 				AA7D083A2ADDE1130096D191 /* Dates.swift in Sources */,
 				AAA2676D2ABBF92100727A9E /* TabBarViewController.swift in Sources */,
 				34AEFEDF2ACE668400EDE29E /* Extensions.swift in Sources */,
-				34AEFF342ACE6E0800EDE29E /* SearchViewController.swift in Sources */,
 				34AEFEF92ACE6D0B00EDE29E /* SearchResponse.swift in Sources */,
 				AA48B1132ACF877E00CC6D5C /* TopRatedCollectionViewCell.swift in Sources */,
-				AAFE87612AD48CEA0032A7CA /* ExtensionSearch.swift in Sources */,
 				AAA2674E2ABBF2FE00727A9E /* SceneDelegate.swift in Sources */,
 				34AEFF0C2ACE6D3A00EDE29E /* MpMoviesCollectionViewCell.swift in Sources */,
 			);
