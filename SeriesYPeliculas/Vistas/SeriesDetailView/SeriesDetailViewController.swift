@@ -33,11 +33,32 @@ class SeriesDetailViewController: UIViewController {
     }
     
     
+    var recibeDatos : ResultSearchResponse?
+    var downloadTask : URLSessionDownloadTask?
+    
     override func viewDidLoad() {
+        downloadTask?.cancel()
+        downloadTask = nil
         super.viewDidLoad()
-
+        setUpPlayingNowInf(categoria: recibeDatos!)
     }
-
+    
+    
+    func setUpPlayingNowInf(categoria : ResultSearchResponse){
+        self.lblSinopsisSerie.text = categoria.title
+        self.lblDateSerieDetail.text = categoria.release_date
+        self.lblDuracionSeriedetail.text = "\(String(describing: categoria.vote_average))"
+        self.lblGeneroSerieDetail.text = "\(String(describing: categoria.genre_ids))"
+        self.lblDescripcionSerieDetail.text = categoria.overview
+        
+        
+        
+        if let urlPoster = categoria.poster_path,
+           let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)"){
+            downloadTask = movieImageDetail.loadImage(url: url)
+        }
+    
+    }
 
     
 

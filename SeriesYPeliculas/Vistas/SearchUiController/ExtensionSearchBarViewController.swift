@@ -14,6 +14,18 @@ extension SearchBarViewController : UITableViewDelegate & UITableViewDataSource 
         return cCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let goToView = SeriesDetailViewController()
+        goToView.recibeDatos = arrSearch[indexPath.row]
+        navigationController?.pushViewController(goToView, animated: true)
+    }
+    
+ /*   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+         let goToView = MovieDetailViewController()
+        goToView.recibeCodable = arrMostPopular[indexPath.row]
+            navigationController?.pushViewController(goToView, animated: true)
+    }
+   */
     
 }
 

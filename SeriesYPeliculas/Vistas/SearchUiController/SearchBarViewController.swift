@@ -20,8 +20,10 @@ class SearchBarViewController: UIViewController {
     var isFiltering : Bool {return search.isActive && !isSearchEmpty}
     var arrSearch: [ResultSearchResponse] = []
     var recibeSearch : String = ""
+    var urlSession : URLSession?
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         setUpSearchBar()
