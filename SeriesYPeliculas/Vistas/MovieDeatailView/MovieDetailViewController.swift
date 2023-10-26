@@ -36,11 +36,9 @@ class MovieDetailViewController: UIViewController {
     }
     
 
-    var playingNowResult : NowPlayingResult?
-    var mostPopularResult : MostPopularResults?
-    var topRatedResult : TopRatedResults?
-    var upcomingResult : UpcomingResults?
+ 
     var downloadTask : URLSessionDownloadTask?
+    var recibeCodable : Codable?
 
     
 
@@ -51,63 +49,79 @@ class MovieDetailViewController: UIViewController {
         super.viewDidLoad()
         
 
+    //    print(type(of: recibeCodable))
+   //     print(recibeCodable)
+       switch recibeCodable {
+       case is NowPlayingResult:
+            setUpPlayingNowInf(categoria: recibeCodable as! NowPlayingResult)
+       case is MostPopularResults:
+            setUpMostPopularInf(categoria: recibeCodable as! MostPopularResults)
+       case is TopRatedResults:
+            setUpTopReatedInf(categoria: recibeCodable as! TopRatedResults)
+       case is UpcomingResults:
+            setUpUpcomingInf(categoria: recibeCodable as! UpcomingResults)
+        default:
+            break
+        }
+
+        
     }
     
     
     func setUpPlayingNowInf(categoria : NowPlayingResult){
-        self.lblDateDetail.text = playingNowResult?.release_date
-        self.lblMovieTitle.text = playingNowResult?.title
-        self.lblGeneroDetail.text = "\(String(describing: playingNowResult?.genre_ids))"
-        self.lblDexcriptionMovieDetail.text = playingNowResult?.overview
-        self.lblDuracionDetail.text = playingNowResult?.original_language
+        self.lblDateDetail.text = categoria.release_date
+        self.lblMovieTitle.text = categoria.title
+        self.lblGeneroDetail.text = "\(String(describing: categoria.genre_ids))"
+        self.lblDexcriptionMovieDetail.text = categoria.overview
+        self.lblDuracionDetail.text = categoria.original_language
         
-    /*    if let urlPoster = categoria.poster_path,
+        if let urlPoster = categoria.backdrop_path,
            let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)"){
             downloadTask = imgMovieDetail.loadImage(url: url)
         }
-    */
+    
     }
     
     func setUpMostPopularInf(categoria : MostPopularResults){
-        self.lblDateDetail.text = playingNowResult?.release_date
-        self.lblMovieTitle.text = playingNowResult?.title
-        self.lblGeneroDetail.text = "\(String(describing: playingNowResult?.genre_ids))"
-        self.lblDexcriptionMovieDetail.text = playingNowResult?.overview
-        self.lblDuracionDetail.text = playingNowResult?.original_language
+        self.lblDateDetail.text = categoria.release_date
+        self.lblMovieTitle.text = categoria.title
+        self.lblGeneroDetail.text = "\(String(describing: categoria.genre_ids))"
+        self.lblDexcriptionMovieDetail.text = categoria.overview
+        self.lblDuracionDetail.text = categoria.original_language
         
-    /*    if let urlPoster = categoria.poster_path,
+        if let urlPoster = categoria.backdrop_path,
            let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)"){
             downloadTask = imgMovieDetail.loadImage(url: url)
         }
-    */
+    
     }
     
     func setUpTopReatedInf(categoria : TopRatedResults){
-        self.lblDateDetail.text = playingNowResult?.release_date
-        self.lblMovieTitle.text = playingNowResult?.title
-        self.lblGeneroDetail.text = "\(String(describing: playingNowResult?.genre_ids))"
-        self.lblDexcriptionMovieDetail.text = playingNowResult?.overview
-        self.lblDuracionDetail.text = playingNowResult?.original_language
+        self.lblDateDetail.text = categoria.release_date
+        self.lblMovieTitle.text = categoria.title
+        self.lblGeneroDetail.text = "\(String(describing: categoria.genre_ids))"
+        self.lblDexcriptionMovieDetail.text = categoria.overview
+        self.lblDuracionDetail.text = categoria.original_language
         
-    /*    if let urlPoster = categoria.poster_path,
+        if let urlPoster = categoria.backdrop_path,
            let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)"){
             downloadTask = imgMovieDetail.loadImage(url: url)
         }
-    */
+    
     }
     
     func setUpUpcomingInf(categoria : UpcomingResults){
-        self.lblDateDetail.text = playingNowResult?.release_date
-        self.lblMovieTitle.text = playingNowResult?.title
-        self.lblGeneroDetail.text = "\(String(describing: playingNowResult?.genre_ids))"
-        self.lblDexcriptionMovieDetail.text = playingNowResult?.overview
-        self.lblDuracionDetail.text = playingNowResult?.original_language
+        self.lblDateDetail.text = categoria.release_date
+        self.lblMovieTitle.text = categoria.title
+        self.lblGeneroDetail.text = "\(String(describing: categoria.genre_ids))"
+        self.lblDexcriptionMovieDetail.text = categoria.overview
+        self.lblDuracionDetail.text = categoria.original_language
         
-    /*    if let urlPoster = categoria.poster_path,
+        if let urlPoster = categoria.backdrop_path,
            let url = URL(string: "https://image.tmdb.org/t/p/w500\(urlPoster)"){
             downloadTask = imgMovieDetail.loadImage(url: url)
         }
-    */
+    
     }
     
     

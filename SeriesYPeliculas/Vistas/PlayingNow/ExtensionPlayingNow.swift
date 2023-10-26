@@ -18,7 +18,7 @@ extension PlayingNowViewController : UICollectionViewDelegate & UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
          let goToView = MovieDetailViewController()
-        goToView.playingNowResult = arrNowPlayingMovies[indexPath.row]
+        goToView.recibeCodable = arrNowPlayingMovies[indexPath.row]
             navigationController?.pushViewController(goToView, animated: true)
     }
   

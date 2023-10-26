@@ -20,7 +20,7 @@ extension UpcomingViewController : UICollectionViewDelegate & UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
          let goToView = MovieDetailViewController()
-        goToView.upcomingResult = arrUpcomingmovies[indexPath.row]
+        goToView.recibeCodable = arrUpcomingmovies[indexPath.row]
             navigationController?.pushViewController(goToView, animated: true)
     }
 }

@@ -15,7 +15,7 @@ extension TopRatedViewController : UICollectionViewDelegate & UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
          let goToView = MovieDetailViewController()
-        goToView.topRatedResult = arrTopRatedMovies[indexPath.row]
+        goToView.recibeCodable = arrTopRatedMovies[indexPath.row]
             navigationController?.pushViewController(goToView, animated: true)
     }
     

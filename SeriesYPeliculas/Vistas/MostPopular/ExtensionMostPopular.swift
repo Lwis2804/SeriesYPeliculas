@@ -15,7 +15,7 @@ extension MostPopularViewController : UICollectionViewDelegate & UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
          let goToView = MovieDetailViewController()
-        goToView.mostPopularResult = arrMostPopular[indexPath.row]
+        goToView.recibeCodable = arrMostPopular[indexPath.row]
             navigationController?.pushViewController(goToView, animated: true)
     }
     
