@@ -22,47 +22,17 @@
                         <rect key="frame" x="2" y="2" width="166" height="286"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kjc-6Q-KrQ">
-                                <rect key="frame" x="20" y="3.6666666666666714" width="126" height="179.66666666666669"/>
+                                <rect key="frame" x="8" y="3.6666666666666714" width="150" height="243.66666666666669"/>
                                 <color key="backgroundColor" red="0.00086986552919999995" green="0.27776318789999999" blue="0.4812998772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="lAE-Rt-XQR"/>
-                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="originalLanguage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgi-f6-rjZ">
-                                <rect key="frame" x="6" y="234" width="154" height="16"/>
-                                <color key="backgroundColor" red="0.00086986552919999995" green="0.27776318789999999" blue="0.4812998772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="gq1-Sk-fIY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTS-8b-WV9">
-                                <rect key="frame" x="6" y="190" width="154" height="16"/>
+                                <rect key="frame" x="6" y="254" width="154" height="26"/>
                                 <color key="backgroundColor" red="0.00086986552919999995" green="0.27776318789999999" blue="0.4812998772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="dp9-vx-y6B"/>
+                                    <constraint firstAttribute="height" constant="26" id="dp9-vx-y6B"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ReleaseDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-OV-NuF">
-                                <rect key="frame" x="6" y="212" width="154" height="16"/>
-                                <color key="backgroundColor" red="0.00086986552919999995" green="0.27776318789999999" blue="0.4812998772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="jpF-yy-vJy"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="overView" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60m-Gr-lMn">
-                                <rect key="frame" x="6" y="256" width="154" height="24"/>
-                                <color key="backgroundColor" red="0.00086986552919999995" green="0.27776318789999999" blue="0.4812998772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -70,21 +40,12 @@
                         <color key="backgroundColor" red="0.018244078380000001" green="0.58221882579999995" blue="0.73685735460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DTS-8b-WV9" firstAttribute="top" secondItem="kjc-6Q-KrQ" secondAttribute="bottom" constant="6" id="061-Aw-ZeZ"/>
-                            <constraint firstItem="kgi-f6-rjZ" firstAttribute="leading" secondItem="mgE-MI-vOc" secondAttribute="leading" constant="6" id="2Fm-XU-0sd"/>
-                            <constraint firstItem="1zb-OV-NuF" firstAttribute="top" secondItem="DTS-8b-WV9" secondAttribute="bottom" constant="6" id="99p-GE-MPw"/>
-                            <constraint firstAttribute="trailing" secondItem="kgi-f6-rjZ" secondAttribute="trailing" constant="6" id="AqC-u0-hy5"/>
-                            <constraint firstAttribute="bottom" secondItem="60m-Gr-lMn" secondAttribute="bottom" constant="6" id="BYV-iv-BtS"/>
-                            <constraint firstItem="kgi-f6-rjZ" firstAttribute="top" secondItem="1zb-OV-NuF" secondAttribute="bottom" constant="6" id="D5e-nS-PAh"/>
-                            <constraint firstAttribute="trailing" secondItem="1zb-OV-NuF" secondAttribute="trailing" constant="6" id="Sdi-Fa-EHB"/>
-                            <constraint firstItem="60m-Gr-lMn" firstAttribute="top" secondItem="kgi-f6-rjZ" secondAttribute="bottom" constant="6" id="TaO-Ro-M2B"/>
                             <constraint firstItem="kjc-6Q-KrQ" firstAttribute="top" secondItem="mgE-MI-vOc" secondAttribute="top" constant="4" id="Vh7-pr-vF1"/>
-                            <constraint firstItem="kjc-6Q-KrQ" firstAttribute="leading" secondItem="mgE-MI-vOc" secondAttribute="leading" constant="20" id="Vlh-Ae-Zuf"/>
-                            <constraint firstAttribute="trailing" secondItem="60m-Gr-lMn" secondAttribute="trailing" constant="6" id="Ytc-7s-p7V"/>
-                            <constraint firstItem="60m-Gr-lMn" firstAttribute="leading" secondItem="mgE-MI-vOc" secondAttribute="leading" constant="6" id="i6c-9C-5wW"/>
+                            <constraint firstItem="kjc-6Q-KrQ" firstAttribute="leading" secondItem="mgE-MI-vOc" secondAttribute="leading" constant="8" id="Vlh-Ae-Zuf"/>
                             <constraint firstItem="DTS-8b-WV9" firstAttribute="leading" secondItem="mgE-MI-vOc" secondAttribute="leading" constant="6" id="nPR-z8-orI"/>
-                            <constraint firstAttribute="trailing" secondItem="kjc-6Q-KrQ" secondAttribute="trailing" constant="20" id="nzR-R9-EKN"/>
+                            <constraint firstAttribute="trailing" secondItem="kjc-6Q-KrQ" secondAttribute="trailing" constant="8" id="nzR-R9-EKN"/>
                             <constraint firstAttribute="trailing" secondItem="DTS-8b-WV9" secondAttribute="trailing" constant="6" id="oBA-jR-wKc"/>
-                            <constraint firstItem="1zb-OV-NuF" firstAttribute="leading" secondItem="mgE-MI-vOc" secondAttribute="leading" constant="6" id="wgD-8O-apc"/>
+                            <constraint firstAttribute="bottom" secondItem="DTS-8b-WV9" secondAttribute="bottom" constant="6" id="uZf-Cz-L4i"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -99,9 +60,6 @@
             <connections>
                 <outlet property="backgroundImage" destination="mgE-MI-vOc" id="cn1-r4-Nyo"/>
                 <outlet property="mostPopularimage" destination="kjc-6Q-KrQ" id="ktW-MO-0ev"/>
-                <outlet property="mpOriginalLanguage" destination="kgi-f6-rjZ" id="BX8-FG-50X"/>
-                <outlet property="mpOverView" destination="60m-Gr-lMn" id="aWb-Dr-v0r"/>
-                <outlet property="mpReleaseDate" destination="1zb-OV-NuF" id="E6d-Ob-AxQ"/>
                 <outlet property="mpVoteAverage" destination="DTS-8b-WV9" id="oVm-JG-kKB"/>
             </connections>
             <point key="canvasLocation" x="-198.47328244274809" y="7.746478873239437"/>

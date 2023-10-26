@@ -16,16 +16,7 @@ class PlayingNowCollectionViewCell: UICollectionViewCell {
             self.imgPoster.layer.masksToBounds = true
         }
     }
-    @IBOutlet weak var npOriginalLanguage: UILabel!{
-        didSet{self.npOriginalLanguage.layer.cornerRadius = 5
-            self.npOriginalLanguage.layer.masksToBounds = true
-        }
-    }
-    @IBOutlet weak var npOverView: UILabel!{
-        didSet{self.npOverView.layer.cornerRadius = 5
-            self.npOverView.layer.masksToBounds = true
-        }
-    }
+    
     @IBOutlet weak var npTitle: UILabel!{
         didSet{self.npTitle.layer.cornerRadius = 5
             self.npTitle.layer.masksToBounds = true
@@ -47,8 +38,6 @@ class PlayingNowCollectionViewCell: UICollectionViewCell {
     }
     
     public func setUpNowPlayingMovies (categoria: NowPlayingResult){
-        self.npOriginalLanguage.text = categoria.original_language
-        self.npOverView.text = categoria.overview
         self.npTitle.text = categoria.title
         
         if let urlPoster = categoria.poster_path,
