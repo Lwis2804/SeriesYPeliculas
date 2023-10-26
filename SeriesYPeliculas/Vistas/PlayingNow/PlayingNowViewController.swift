@@ -38,6 +38,7 @@ class PlayingNowViewController: UIViewController {
         self.moviesCollectionView.reloadData()
     }
     
+    
     private func getNowPlayingMovies() {
         let movieWS = Movie_WS()
         movieWS.getNowPlayingMovies { respuesta, error in

@@ -25,6 +25,7 @@
                 <outlet property="lblDuraconTrailer" destination="b9h-xp-o98" id="hzG-ej-UFw"/>
                 <outlet property="lblGeneroDetail" destination="Qfh-jg-h2z" id="CM2-wK-Goo"/>
                 <outlet property="lblInformacionTitle" destination="koh-V5-wGz" id="dpt-dZ-iGO"/>
+                <outlet property="lblMovieTitle" destination="jnf-Kt-wxf" id="Jkk-El-tlo"/>
                 <outlet property="lblRepartoDetail" destination="ASB-v5-h5a" id="eR6-ge-GXx"/>
                 <outlet property="repartoCollectionView" destination="Hrr-nl-ny7" id="7gK-h1-Fbi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

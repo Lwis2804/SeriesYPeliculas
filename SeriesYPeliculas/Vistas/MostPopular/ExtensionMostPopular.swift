@@ -13,6 +13,12 @@ extension MostPopularViewController : UICollectionViewDelegate & UICollectionVie
             return cCell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+         let goToView = MovieDetailViewController()
+        goToView.mostPopularResult = arrMostPopular[indexPath.row]
+            navigationController?.pushViewController(goToView, animated: true)
+    }
+    
 }
 
 extension MostPopularViewController : UICollectionViewDelegateFlowLayout {

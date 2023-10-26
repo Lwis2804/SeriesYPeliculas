@@ -14,11 +14,11 @@ extension TopRatedViewController : UICollectionViewDelegate & UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let goToView = MovieDetailViewController()
-        navigationController?.pushViewController(goToView, animated: true)
-        
+         let goToView = MovieDetailViewController()
+        goToView.topRatedResult = arrTopRatedMovies[indexPath.row]
+            navigationController?.pushViewController(goToView, animated: true)
     }
+    
 }
 
 

@@ -19,6 +19,7 @@ class MostPopularViewController: UIViewController {
     }
     
 
+    var mostPopularResult : MostPopularResponse?
     var arrMostPopular: [MostPopularResults] = []
     
     
