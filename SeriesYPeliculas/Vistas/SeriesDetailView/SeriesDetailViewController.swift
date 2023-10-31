@@ -47,8 +47,8 @@ class SeriesDetailViewController: UIViewController {
     func setUpPlayingNowInf(categoria : ResultSearchResponse){
         self.lblSinopsisSerie.text = categoria.title
         self.lblDateSerieDetail.text = categoria.release_date
-        self.lblDuracionSeriedetail.text = "\(String(describing: categoria.vote_average))"
-        self.lblGeneroSerieDetail.text = "\(String(describing: categoria.genre_ids))"
+        self.lblDuracionSeriedetail.text = "\(categoria.vote_average ?? 0.0)"
+        self.lblGeneroSerieDetail.text = categoria.original_title
         self.lblDescripcionSerieDetail.text = categoria.overview
         
         

@@ -29,7 +29,7 @@ class SearchTableViewCell: UITableViewCell {
     
     
     public func setUpSearchMovies (categoria : ResultSearchResponse) {
-        self.searchBarTitle.text = "\(String(describing: categoria.title))"
+        self.searchBarTitle.text = "\(categoria.title ?? "")"
        
     }
     
